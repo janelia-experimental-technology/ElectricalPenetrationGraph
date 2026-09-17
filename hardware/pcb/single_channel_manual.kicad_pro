@@ -41,7 +41,7 @@
         "pads": {
           "drill": 0.8,
           "height": 1.27,
-          "width": 2.54
+          "width": 1.27
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -488,7 +488,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "single_channel.kicad_pro",
+    "filename": "single_channel_manual.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -522,14 +522,10 @@
   },
   "pcbnew": {
     "last_paths": {
-      "gencad": "",
       "idf": "",
       "netlist": "",
       "plot": "",
-      "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
-      "svg": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -647,15 +643,20 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "single_channel.kicad_sch",
-        "name": "single_channel",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "filename": "single_channel_manual.kicad_sch",
+        "name": "single_channel_manual",
+        "uuid": "dee6642c-0837-4dcc-9a98-52dc1dea3811"
       }
     ],
-    "used_designators": "",
+    "used_designators": "C7-14",
     "variants": []
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "dee6642c-0837-4dcc-9a98-52dc1dea3811",
+      "Root"
+    ]
+  ],
   "text_variables": {},
   "tuning_profiles": {
     "meta": {
