@@ -433,6 +433,76 @@ chip</description>
 <text x="-2.916" y="4.616" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.916" y="3.314" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="BNC-VERT">
+<pad name="A" x="5.08" y="5.08" drill="2.01"/>
+<pad name="B" x="-5.08" y="-5.08" drill="2.01"/>
+<pad name="1" x="0" y="0" drill="0.89"/>
+<pad name="2" x="-2.54" y="0" drill="0.89" rot="R90"/>
+<wire x1="7.3" y1="7.5" x2="6.9" y2="7.9" width="0.127" layer="21"/>
+<wire x1="6.9" y1="7.9" x2="-6.9" y2="7.9" width="0.127" layer="21"/>
+<wire x1="-6.9" y1="7.9" x2="-7.3" y2="7.5" width="0.127" layer="21"/>
+<wire x1="-7.3" y1="7.5" x2="-7.3" y2="-7.5" width="0.127" layer="21"/>
+<wire x1="-7.3" y1="-7.5" x2="-3.9" y2="-7.5" width="0.127" layer="21"/>
+<wire x1="-3.9" y1="-7.5" x2="7.3" y2="-7.5" width="0.127" layer="21"/>
+<wire x1="7.3" y1="-7.5" x2="7.3" y2="7.5" width="0.127" layer="21"/>
+<wire x1="-3.2" y1="5.5" x2="3.1" y2="5.5" width="0.127" layer="21"/>
+<wire x1="0" y1="-6.4" x2="-3.2" y2="5.5" width="0.127" layer="21" curve="-149.808377"/>
+<wire x1="0" y1="-6.4" x2="3.1" y2="5.5" width="0.127" layer="21" curve="150.814084"/>
+<circle x="0" y="0" radius="4.8166375" width="0.127" layer="21"/>
+<text x="-3.963" y="8.741" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-4.217" y="11.027" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-7.3" y1="-7.6" x2="-7.3" y2="-7.9" width="0.127" layer="21"/>
+<wire x1="-7.3" y1="-7.9" x2="-3.9" y2="-7.9" width="0.127" layer="21"/>
+<wire x1="-3.9" y1="-7.9" x2="-3.9" y2="-7.5" width="0.127" layer="21"/>
+<wire x1="7.3" y1="-7.5" x2="7.3" y2="-7.9" width="0.127" layer="21"/>
+<wire x1="7.3" y1="-7.9" x2="3.9" y2="-7.9" width="0.127" layer="21"/>
+<wire x1="3.9" y1="-7.9" x2="3.9" y2="-7.6" width="0.127" layer="21"/>
+</package>
+<package name="112640BNC">
+<smd name="G2" x="4.925" y="2.4" dx="1.35" dy="4.72" layer="1"/>
+<smd name="G1" x="-4.925" y="2.4" dx="1.35" dy="4.72" layer="1"/>
+<smd name="G3" x="4.315" y="2.4" dx="1.35" dy="4.72" layer="16"/>
+<smd name="G4" x="-4.315" y="2.4" dx="1.35" dy="4.72" layer="16"/>
+<smd name="SIG" x="0" y="2.4" dx="0.86" dy="4.72" layer="1"/>
+<text x="-2.307" y="6.388" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-2.307" y="8.222" size="1.016" layer="25" ratio="10">&gt;NAME</text>
+<wire x1="-4.1" y1="4.6" x2="-0.7" y2="4.6" width="0.127" layer="21"/>
+<wire x1="0.7" y1="4.6" x2="4" y2="4.6" width="0.127" layer="21"/>
+</package>
+<package name="BNC-BJ21">
+<wire x1="-6.35" y1="14.4272" x2="-6.35" y2="19.8882" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="19.8882" x2="-4.826" y2="19.8882" width="0.127" layer="21"/>
+<wire x1="-4.826" y1="19.8882" x2="4.826" y2="19.8882" width="0.127" layer="21"/>
+<wire x1="4.826" y1="19.8882" x2="6.5786" y2="19.8882" width="0.127" layer="21"/>
+<wire x1="6.5786" y1="19.8882" x2="6.604" y2="19.8882" width="0.127" layer="21"/>
+<wire x1="6.604" y1="19.8882" x2="6.604" y2="14.4272" width="0.127" layer="21"/>
+<wire x1="4.826" y1="19.8882" x2="4.826" y2="33.7312" width="0.127" layer="21"/>
+<wire x1="4.826" y1="33.7312" x2="-4.826" y2="33.7312" width="0.127" layer="21"/>
+<wire x1="-4.826" y1="33.7312" x2="-4.826" y2="19.8882" width="0.127" layer="21"/>
+<wire x1="-6.3246" y1="17.7546" x2="6.5786" y2="18.6182" width="0.127" layer="21"/>
+<wire x1="-6.3246" y1="16.4846" x2="6.5786" y2="17.3482" width="0.127" layer="21"/>
+<wire x1="-6.3246" y1="15.2146" x2="6.5786" y2="16.0782" width="0.127" layer="21"/>
+<wire x1="-6.3246" y1="19.0246" x2="6.5786" y2="19.8882" width="0.127" layer="21"/>
+<circle x="0" y="30.48" radius="0.8179" width="0.127" layer="21"/>
+<text x="12.7" y="20.447" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="12.7" y="18.288" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<wire x1="-7.112" y1="14.478" x2="7.112" y2="14.478" width="0.127" layer="21"/>
+<wire x1="7.112" y1="14.478" x2="7.112" y2="13.716" width="0.127" layer="21"/>
+<wire x1="7.112" y1="13.716" x2="2.794" y2="13.716" width="0.127" layer="21"/>
+<wire x1="2.794" y1="13.716" x2="-2.794" y2="13.716" width="0.127" layer="21"/>
+<wire x1="-2.794" y1="13.716" x2="-7.112" y2="13.716" width="0.127" layer="21"/>
+<wire x1="-7.112" y1="13.716" x2="-7.112" y2="14.478" width="0.127" layer="21"/>
+<wire x1="-2.794" y1="13.716" x2="-2.794" y2="12.7" width="0.127" layer="21"/>
+<wire x1="-2.794" y1="12.7" x2="-1.016" y2="12.7" width="0.127" layer="21"/>
+<wire x1="-1.016" y1="12.7" x2="1.016" y2="12.7" width="0.127" layer="21"/>
+<wire x1="1.016" y1="12.7" x2="2.794" y2="12.7" width="0.127" layer="21"/>
+<wire x1="2.794" y1="12.7" x2="2.794" y2="13.716" width="0.127" layer="21"/>
+<wire x1="-1.016" y1="12.7" x2="-1.016" y2="7.366" width="0.127" layer="21"/>
+<wire x1="-1.016" y1="7.366" x2="1.016" y2="7.366" width="0.127" layer="21"/>
+<wire x1="1.016" y1="7.366" x2="1.016" y2="12.7" width="0.127" layer="21"/>
+<smd name="P$1" x="0" y="12.954" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<smd name="P$2" x="0" y="8.128" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="R-US">
@@ -459,6 +529,20 @@ chip</description>
 <rectangle x1="-2.032" y1="-3.556" x2="2.032" y2="-3.048" layer="94"/>
 <pin name="1" x="0" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="2" x="0" y="-7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+<symbol name="BNC">
+<wire x1="0" y1="-2.54" x2="-0.762" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-0.508" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0.508" x2="-0.762" y2="0.508" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="0.508" x2="-0.508" y2="0" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="0" x2="-0.762" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-0.508" x2="-2.54" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="0" y2="0.508" width="0.3048" layer="94" curve="-79.611142" cap="flat"/>
+<wire x1="-2.54" y1="-2.54" x2="0" y2="-0.508" width="0.3048" layer="94" curve="79.611142" cap="flat"/>
+<text x="-2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.54" y="3.302" size="1.778" layer="95">&gt;NAME</text>
+<pin name="1" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="GND@1" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -613,6 +697,40 @@ chip</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BNC" prefix="J">
+<gates>
+<gate name="G$1" symbol="BNC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BNC-VERT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="GND@1" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="END_LAUNCH_BNC" package="112640BNC">
+<connects>
+<connect gate="G$1" pin="1" pad="SIG"/>
+<connect gate="G$1" pin="GND@1" pad="G1 G2 G3 G4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="BJ21" package="BNC-BJ21">
+<connects>
+<connect gate="G$1" pin="1" pad="P$2"/>
+<connect gate="G$1" pin="GND@1" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4198,100 +4316,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-Connectors">
-<description>&lt;h3&gt;SparkFun Connectors&lt;/h3&gt;
-This library contains electrically-functional connectors. 
-&lt;br&gt;
-&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
-&lt;br&gt;
-&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;
-&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="BNC">
-<description>&lt;h3&gt;BNC Jack - Mouser Part#5227161 &lt;/h3&gt;
-&lt;p&gt;Specifications:
-&lt;ul&gt;&lt;li&gt;Pin count: 4&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=”http://www.mouser.com/ds/2/418/NG_CS_1307191_BNC_Connectors_0307-561881.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;BNC&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<wire x1="-7.493" y1="-2.9718" x2="7.493" y2="-2.9718" width="0.127" layer="21"/>
-<wire x1="7.493" y1="-2.9718" x2="7.493" y2="10.8712" width="0.127" layer="21"/>
-<wire x1="7.493" y1="10.8712" x2="-7.493" y2="10.8712" width="0.127" layer="21"/>
-<wire x1="-7.493" y1="10.8712" x2="-7.493" y2="-2.9718" width="0.127" layer="21"/>
-<wire x1="-7.112" y1="10.8712" x2="-7.112" y2="19.8882" width="0.127" layer="51"/>
-<wire x1="-7.112" y1="19.8882" x2="-6.604" y2="19.8882" width="0.127" layer="51"/>
-<wire x1="-6.604" y1="19.8882" x2="6.604" y2="19.8882" width="0.127" layer="51"/>
-<wire x1="6.604" y1="19.8882" x2="7.0866" y2="19.8882" width="0.127" layer="51"/>
-<wire x1="7.0866" y1="19.8882" x2="7.112" y2="19.8882" width="0.127" layer="51"/>
-<wire x1="7.112" y1="19.8882" x2="7.112" y2="10.8712" width="0.127" layer="51"/>
-<wire x1="6.604" y1="19.8882" x2="6.604" y2="33.7312" width="0.127" layer="51"/>
-<wire x1="6.604" y1="33.7312" x2="-6.604" y2="33.7312" width="0.127" layer="51"/>
-<wire x1="-6.604" y1="33.7312" x2="-6.604" y2="19.8882" width="0.127" layer="51"/>
-<wire x1="-7.0866" y1="17.7546" x2="7.0866" y2="18.6182" width="0.127" layer="51"/>
-<wire x1="-7.0866" y1="16.4846" x2="7.0866" y2="17.3482" width="0.127" layer="51"/>
-<wire x1="-7.0866" y1="15.2146" x2="7.0866" y2="16.0782" width="0.127" layer="51"/>
-<wire x1="-7.0866" y1="13.9446" x2="7.0866" y2="14.8082" width="0.127" layer="51"/>
-<wire x1="-7.0866" y1="12.6746" x2="7.0866" y2="13.5382" width="0.127" layer="51"/>
-<wire x1="-7.0866" y1="11.4046" x2="7.0866" y2="12.2682" width="0.127" layer="51"/>
-<wire x1="-7.0866" y1="19.0246" x2="7.0866" y2="19.8882" width="0.127" layer="51"/>
-<circle x="0" y="30.48" radius="0.8179" width="0.127" layer="51"/>
-<pad name="GND" x="-2.54" y="0" drill="0.8" shape="long" rot="R90"/>
-<pad name="S" x="0" y="0" drill="0.8" shape="long" rot="R90"/>
-<pad name="3" x="-5.08" y="5.08" drill="2.2"/>
-<pad name="4" x="5.08" y="5.08" drill="2.2"/>
-<text x="-1.27" y="7.747" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-1.27" y="4.318" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="BNC">
-<description>&lt;h3&gt;BNC Connector&lt;/h3&gt;
-2 pin connection</description>
-<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
-<circle x="0" y="0" radius="0.5679" width="0.254" layer="94"/>
-<text x="-2.54" y="5.334" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="-2.54" y="3.048" size="1.778" layer="96" font="vector">&gt;VALUE</text>
-<text x="0" y="-2.54" size="1.778" layer="94" rot="MR180">GND</text>
-<text x="2.54" y="0" size="1.778" layer="94">OUT</text>
-<pin name="OUT" x="5.08" y="0" visible="off" length="middle" rot="R180"/>
-<pin name="GND" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="BNC" prefix="J">
-<description>&lt;h3&gt;BNC Right Angle Connector&lt;/h3&gt;
-&lt;p&gt;Mouser Part# 5227161&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
-&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/10550”&gt;BNC Connector - Right Angle&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="BNC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="PTH" package="BNC">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="OUT" pad="S"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="LPA-12729" constant="no"/>
-<attribute name="SF_ID" value="PRT-10550" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4320,7 +4344,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C5" library="STEVES_BU" deviceset="CAPS" device="0603S"/>
 <part name="C6" library="STEVES_BU" deviceset="CAPS" device="0603S"/>
 <part name="C7" library="STEVES_BU" deviceset="CAPS" device="0603S"/>
-<part name="R9" library="resistor" deviceset="R-US_" device="0414/15"/>
+<part name="R9" library="resistor" deviceset="R-US_" device="0617/22"/>
 <part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -4332,7 +4356,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND8" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND9" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="J2" library="54-00248" deviceset="54-00248" device=""/>
-<part name="J3" library="SparkFun-Connectors" deviceset="BNC" device="PTH"/>
+<part name="J1" library="STEVES_BU" deviceset="BNC" device="BJ21"/>
 </parts>
 <sheets>
 <sheet>
@@ -4378,7 +4402,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND8" gate="1" x="-53.34" y="83.82"/>
 <instance part="GND9" gate="1" x="96.52" y="53.34"/>
 <instance part="J2" gate="G$1" x="124.46" y="58.42" rot="MR0"/>
-<instance part="J3" gate="G$1" x="-53.34" y="91.44"/>
+<instance part="J1" gate="G$1" x="-55.88" y="91.44"/>
 </instances>
 <busses>
 </busses>
@@ -4397,7 +4421,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="30.48" y="63.5"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="SIGOUT" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="OUT"/>
 <wire x1="12.7" y1="88.9" x2="12.7" y2="68.58" width="0.1524" layer="91"/>
@@ -4410,6 +4434,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="12.7" y="88.9"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="35.56" y1="71.12" x2="38.1" y2="71.12" width="0.1524" layer="91"/>
+<label x="20.32" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -4434,7 +4459,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="48.26" y="60.96"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="VSOUT" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="OUT"/>
 <wire x1="15.24" y1="35.56" x2="35.56" y2="35.56" width="0.1524" layer="91"/>
@@ -4447,6 +4472,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-22.86" y1="12.7" x2="15.24" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="12.7" x2="15.24" y2="35.56" width="0.1524" layer="91"/>
 <junction x="15.24" y="35.56"/>
+<label x="22.86" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -4487,13 +4513,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="78.74" y1="50.8" x2="76.2" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND8" gate="1" pin="GND"/>
-<pinref part="J3" gate="G$1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="114.3" y1="55.88" x2="96.52" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="6"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="GND@1"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="-53.34" y1="88.9" x2="-53.34" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="-5V0" class="0">
@@ -4608,9 +4635,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-20.32" y1="91.44" x2="-35.56" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="-35.56" y1="91.44" x2="-35.56" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="-35.56" y1="91.44" x2="-48.26" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="91.44" x2="-53.34" y2="91.44" width="0.1524" layer="91"/>
 <junction x="-35.56" y="91.44"/>
-<pinref part="J3" gate="G$1" pin="OUT"/>
+<pinref part="J1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="VS" class="0">
