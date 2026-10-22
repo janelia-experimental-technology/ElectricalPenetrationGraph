@@ -55,8 +55,8 @@
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -469,34 +469,34 @@ by exp-lbrs.ulp</description>
 <text x="-3.683" y="2.667" size="1.016" layer="25" font="vector" ratio="10" distance="40">&gt;NAME</text>
 </package>
 <package name="BNC">
-<circle x="15.98" y="0" radius="0.8179" width="0.127" layer="21"/>
-<wire x1="-0.0728" y1="6.35" x2="5.3882" y2="6.35" width="0.127" layer="21"/>
-<wire x1="5.3882" y1="6.35" x2="5.3882" y2="4.826" width="0.127" layer="21"/>
-<wire x1="5.3882" y1="4.826" x2="5.3882" y2="-4.826" width="0.127" layer="21"/>
-<wire x1="5.3882" y1="-4.826" x2="5.3882" y2="-6.5786" width="0.127" layer="21"/>
-<wire x1="5.3882" y1="-6.5786" x2="5.3882" y2="-6.604" width="0.127" layer="21"/>
-<wire x1="5.3882" y1="-6.604" x2="-0.0728" y2="-6.604" width="0.127" layer="21"/>
-<wire x1="5.3882" y1="-4.826" x2="19.2312" y2="-4.826" width="0.127" layer="21"/>
-<wire x1="19.2312" y1="-4.826" x2="19.2312" y2="4.826" width="0.127" layer="21"/>
-<wire x1="19.2312" y1="4.826" x2="5.3882" y2="4.826" width="0.127" layer="21"/>
-<wire x1="3.2546" y1="6.3246" x2="4.1182" y2="-6.5786" width="0.127" layer="21"/>
-<wire x1="1.9846" y1="6.3246" x2="2.8482" y2="-6.5786" width="0.127" layer="21"/>
-<wire x1="0.7146" y1="6.3246" x2="1.5782" y2="-6.5786" width="0.127" layer="21"/>
-<wire x1="4.5246" y1="6.3246" x2="5.3882" y2="-6.5786" width="0.127" layer="21"/>
-<wire x1="-0.022" y1="7.112" x2="-0.022" y2="-7.112" width="0.127" layer="21"/>
-<wire x1="-0.022" y1="-7.112" x2="-0.784" y2="-7.112" width="0.127" layer="21"/>
-<wire x1="-0.784" y1="-7.112" x2="-0.784" y2="-2.794" width="0.127" layer="21"/>
-<wire x1="-0.784" y1="-2.794" x2="-0.784" y2="2.794" width="0.127" layer="21"/>
-<wire x1="-0.784" y1="2.794" x2="-0.784" y2="7.112" width="0.127" layer="21"/>
-<wire x1="-0.784" y1="7.112" x2="-0.022" y2="7.112" width="0.127" layer="21"/>
-<wire x1="-0.784" y1="2.794" x2="-1.8" y2="2.794" width="0.127" layer="21"/>
-<wire x1="-1.8" y1="2.794" x2="-1.8" y2="1.016" width="0.127" layer="21"/>
-<wire x1="-1.8" y1="1.016" x2="-1.8" y2="-1.016" width="0.127" layer="21"/>
-<wire x1="-1.8" y1="-1.016" x2="-1.8" y2="-2.794" width="0.127" layer="21"/>
-<wire x1="-1.8" y1="-2.794" x2="-0.784" y2="-2.794" width="0.127" layer="21"/>
-<wire x1="-1.8" y1="1.016" x2="-7.134" y2="1.016" width="0.127" layer="21"/>
-<wire x1="-7.134" y1="1.016" x2="-7.134" y2="-1.016" width="0.127" layer="21"/>
-<wire x1="-7.134" y1="-1.016" x2="-1.8" y2="-1.016" width="0.127" layer="21"/>
+<circle x="15.98" y="0" radius="0.8179" width="0.127" layer="49"/>
+<wire x1="-0.0728" y1="6.35" x2="5.3882" y2="6.35" width="0.127" layer="49"/>
+<wire x1="5.3882" y1="6.35" x2="5.3882" y2="4.826" width="0.127" layer="49"/>
+<wire x1="5.3882" y1="4.826" x2="5.3882" y2="-4.826" width="0.127" layer="49"/>
+<wire x1="5.3882" y1="-4.826" x2="5.3882" y2="-6.5786" width="0.127" layer="49"/>
+<wire x1="5.3882" y1="-6.5786" x2="5.3882" y2="-6.604" width="0.127" layer="49"/>
+<wire x1="5.3882" y1="-6.604" x2="-0.0728" y2="-6.604" width="0.127" layer="49"/>
+<wire x1="5.3882" y1="-4.826" x2="19.2312" y2="-4.826" width="0.127" layer="49"/>
+<wire x1="19.2312" y1="-4.826" x2="19.2312" y2="4.826" width="0.127" layer="49"/>
+<wire x1="19.2312" y1="4.826" x2="5.3882" y2="4.826" width="0.127" layer="49"/>
+<wire x1="3.2546" y1="6.3246" x2="4.1182" y2="-6.5786" width="0.127" layer="49"/>
+<wire x1="1.9846" y1="6.3246" x2="2.8482" y2="-6.5786" width="0.127" layer="49"/>
+<wire x1="0.7146" y1="6.3246" x2="1.5782" y2="-6.5786" width="0.127" layer="49"/>
+<wire x1="4.5246" y1="6.3246" x2="5.3882" y2="-6.5786" width="0.127" layer="49"/>
+<wire x1="-0.022" y1="7.112" x2="-0.022" y2="-7.112" width="0.127" layer="49"/>
+<wire x1="-0.022" y1="-7.112" x2="-0.784" y2="-7.112" width="0.127" layer="49"/>
+<wire x1="-0.784" y1="-7.112" x2="-0.784" y2="-2.794" width="0.127" layer="49"/>
+<wire x1="-0.784" y1="-2.794" x2="-0.784" y2="2.794" width="0.127" layer="49"/>
+<wire x1="-0.784" y1="2.794" x2="-0.784" y2="7.112" width="0.127" layer="49"/>
+<wire x1="-0.784" y1="7.112" x2="-0.022" y2="7.112" width="0.127" layer="49"/>
+<wire x1="-0.784" y1="2.794" x2="-1.8" y2="2.794" width="0.127" layer="49"/>
+<wire x1="-1.8" y1="2.794" x2="-1.8" y2="1.016" width="0.127" layer="49"/>
+<wire x1="-1.8" y1="1.016" x2="-1.8" y2="-1.016" width="0.127" layer="49"/>
+<wire x1="-1.8" y1="-1.016" x2="-1.8" y2="-2.794" width="0.127" layer="49"/>
+<wire x1="-1.8" y1="-2.794" x2="-0.784" y2="-2.794" width="0.127" layer="49"/>
+<wire x1="-1.8" y1="1.016" x2="-7.134" y2="1.016" width="0.127" layer="49"/>
+<wire x1="-7.134" y1="1.016" x2="-7.134" y2="-1.016" width="0.127" layer="49"/>
+<wire x1="-7.134" y1="-1.016" x2="-1.8" y2="-1.016" width="0.127" layer="49"/>
 </package>
 </packages>
 </library>

@@ -848,9 +848,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 by exp-lbrs.ulp</description>
 <packages>
 <package name="MRE05">
-<pad name="GUARD" x="-11.34" y="2.52" drill="0.8"/>
-<pad name="COIL1" x="-11.34" y="-2.52" drill="0.8"/>
-<pad name="COIL2" x="11.34" y="-2.52" drill="0.8"/>
+<pad name="GUARD" x="-10.22" y="2.52" drill="0.8"/>
+<pad name="COIL1" x="-10.22" y="-2.52" drill="0.8"/>
+<pad name="COIL2" x="12.5" y="-2.52" drill="0.8"/>
 <wire x1="-14" y1="4" x2="14" y2="4" width="0.127" layer="21"/>
 <wire x1="14" y1="4" x2="14" y2="-4" width="0.127" layer="21"/>
 <wire x1="14" y1="-4" x2="-14" y2="-4" width="0.127" layer="21"/>

@@ -961,6 +961,7 @@ by exp-lbrs.ulp</description>
 </package>
 <package name="PAD-150SQ">
 <smd name="P$1" x="0" y="0" dx="3.81" dy="3.81" layer="1"/>
+<text x="-2.54" y="2.794" size="1.016" layer="25" font="vector" ratio="10">&gt;NAME</text>
 </package>
 <package name="PAD_006">
 <pad name="P$1" x="0" y="0" drill="0.1524"/>
@@ -1144,9 +1145,9 @@ by exp-lbrs.ulp</description>
 <part name="GND10" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C2" library="STEVES_BU" deviceset="CAPS" device="0603S" value="0.1"/>
 <part name="GND11" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="RL1" library="EPGinput" deviceset="REED-RELAY" device=""/>
+<part name="K1" library="EPGinput" deviceset="REED-RELAY" device=""/>
 <part name="VS" library="wirepad" deviceset="2,15/1,0" device=""/>
-<part name="J3" library="jETPAK-ASM" deviceset="PAD" device="PAD150"/>
+<part name="IN" library="jETPAK-ASM" deviceset="PAD" device="PAD150"/>
 </parts>
 <sheets>
 <sheet>
@@ -1203,9 +1204,9 @@ by exp-lbrs.ulp</description>
 <instance part="GND10" gate="1" x="53.34" y="48.26"/>
 <instance part="C2" gate="G$1" x="-40.64" y="38.1" rot="MR0"/>
 <instance part="GND11" gate="1" x="-40.64" y="27.94"/>
-<instance part="RL1" gate="G$1" x="-40.64" y="63.5" rot="MR90"/>
+<instance part="K1" gate="G$1" x="-40.64" y="63.5" rot="MR90"/>
 <instance part="VS" gate="1" x="-53.34" y="35.56" rot="R90"/>
-<instance part="J3" gate="G$1" x="-55.88" y="91.44" rot="R180"/>
+<instance part="IN" gate="G$1" x="-55.88" y="91.44" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -1448,7 +1449,7 @@ by exp-lbrs.ulp</description>
 <label x="-30.48" y="91.44" size="1.778" layer="95"/>
 <wire x1="-40.64" y1="91.44" x2="-45.72" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="-45.72" y1="91.44" x2="-53.34" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="J3" gate="G$1" pin="1"/>
+<pinref part="IN" gate="G$1" pin="1"/>
 <wire x1="-40.64" y1="76.2" x2="-40.64" y2="91.44" width="0.1524" layer="91"/>
 <junction x="-40.64" y="91.44"/>
 </segment>
@@ -1479,7 +1480,7 @@ by exp-lbrs.ulp</description>
 <pinref part="J1" gate="1" pin="8"/>
 </segment>
 <segment>
-<pinref part="RL1" gate="G$1" pin="C1"/>
+<pinref part="K1" gate="G$1" pin="C1"/>
 <wire x1="-45.72" y1="50.8" x2="-45.72" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="-45.72" y1="48.26" x2="-45.72" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="-45.72" y1="45.72" x2="-58.42" y2="45.72" width="0.1524" layer="91"/>
@@ -1499,7 +1500,7 @@ by exp-lbrs.ulp</description>
 <wire x1="-53.34" y1="88.9" x2="-58.42" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="-58.42" y1="88.9" x2="-58.42" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="GD" gate="1" pin="P"/>
-<pinref part="RL1" gate="G$1" pin="GRD"/>
+<pinref part="K1" gate="G$1" pin="GRD"/>
 <wire x1="-35.56" y1="50.8" x2="-30.48" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="-30.48" y1="50.8" x2="-30.48" y2="81.28" width="0.1524" layer="91"/>
 </segment>
@@ -1528,7 +1529,7 @@ by exp-lbrs.ulp</description>
 <label x="106.68" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="RL1" gate="G$1" pin="C2"/>
+<pinref part="K1" gate="G$1" pin="C2"/>
 <wire x1="-45.72" y1="76.2" x2="-53.34" y2="76.2" width="0.1524" layer="91"/>
 <label x="-53.34" y="76.2" size="1.778" layer="95"/>
 </segment>

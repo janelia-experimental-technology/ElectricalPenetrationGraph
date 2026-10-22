@@ -64,8 +64,10 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="58" name="b3D" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="61" name="stand" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -134,10 +136,18 @@
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="156" name="DXF0409-TOP" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="157" name="DXF0409-BOTTOM" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="158" name="FaceMMeas" color="7" fill="1" visible="no" active="no"/>
+<layer number="159" name="Geh-Bear2" color="7" fill="1" visible="no" active="no"/>
 <layer number="160" name="enclosure" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="161" name="enclosure_dimensions" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="166" name="AntennaArea" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="168" name="4mmHeightArea" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="170" name="Pinguin_tPlace" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="171" name="Pinguin_bPlace" color="13" fill="1" visible="yes" active="yes"/>
+<layer number="172" name="Pinguin_tBackup" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="173" name="Pinguin_bBackup" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="180" name="180bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="181" name="181bmp" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="191" name="mNets" color="7" fill="1" visible="yes" active="yes"/>
@@ -185,6 +195,8 @@
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="252" name="BR-BS" color="7" fill="1" visible="no" active="no"/>
+<layer number="253" name="Extra" color="7" fill="1" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
@@ -503,6 +515,20 @@ chip</description>
 <smd name="P$1" x="0" y="12.954" dx="1.27" dy="0.635" layer="1" rot="R90"/>
 <smd name="P$2" x="0" y="8.128" dx="1.27" dy="0.635" layer="1" rot="R90"/>
 </package>
+<package name="POMONA2397">
+<wire x1="-28.575" y1="-14.351" x2="28.575" y2="-14.351" width="0.127" layer="248"/>
+<wire x1="28.575" y1="-14.351" x2="28.575" y2="14.351" width="0.127" layer="248"/>
+<wire x1="28.575" y1="14.351" x2="-28.575" y2="14.351" width="0.127" layer="248"/>
+<wire x1="-28.575" y1="14.351" x2="-28.575" y2="-14.351" width="0.127" layer="248"/>
+<wire x1="-27.305" y1="-13.081" x2="27.305" y2="-13.081" width="0.127" layer="248"/>
+<wire x1="27.305" y1="-13.081" x2="27.305" y2="13.081" width="0.127" layer="248"/>
+<wire x1="27.305" y1="13.081" x2="-27.305" y2="13.081" width="0.127" layer="248"/>
+<wire x1="-27.305" y1="13.081" x2="-27.305" y2="-13.081" width="0.127" layer="248"/>
+<circle x="-25.4" y="-11.176" radius="2.032" width="0.127" layer="248"/>
+<circle x="25.4" y="-11.176" radius="2.032" width="0.127" layer="248"/>
+<circle x="25.4" y="11.176" radius="2.032" width="0.127" layer="248"/>
+<circle x="-25.4" y="11.176" radius="2.032" width="0.127" layer="248"/>
+</package>
 </packages>
 <symbols>
 <symbol name="R-US">
@@ -732,6 +758,17 @@ chip</description>
 <connect gate="G$1" pin="1" pad="P$2"/>
 <connect gate="G$1" pin="GND@1" pad="P$1"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POMONA2397">
+<gates>
+</gates>
+<devices>
+<device name="" package="POMONA2397">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1001,7 +1038,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C3" library="STEVES_BU" deviceset="CAPS" device="0603S"/>
 <part name="C4" library="STEVES_BU" deviceset="CAPS" device="0603S"/>
 <part name="C5" library="STEVES_BU" deviceset="CAPS" device="0603S"/>
-<part name="C6" library="STEVES_BU" deviceset="CAPS" device="0603S"/>
 <part name="C7" library="STEVES_BU" deviceset="CAPS" device="0603S"/>
 <part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -1011,12 +1047,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C8" library="STEVES_BU" deviceset="CAPS" device="0603S"/>
 <part name="GND6" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND7" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="GND8" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND9" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="J2" library="54-00248" deviceset="54-00248" device=""/>
 <part name="J1" library="STEVES_BU" deviceset="BNC" device="BJ21"/>
 <part name="PAD1" library="wirepad" deviceset="SMD2" device=""/>
 <part name="PAD2" library="wirepad" deviceset="2,15/1,0" device=""/>
+<part name="PAD3" library="wirepad" deviceset="2,15/1,0" device=""/>
+<part name="U$1" library="STEVES_BU" deviceset="POMONA2397" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1054,7 +1091,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="C3" gate="G$1" x="0" y="48.26" rot="R90"/>
 <instance part="C4" gate="G$1" x="2.54" y="20.32" rot="R90"/>
 <instance part="C5" gate="G$1" x="-2.54" y="73.66" rot="R90"/>
-<instance part="C6" gate="G$1" x="78.74" y="22.86" rot="R90"/>
 <instance part="C7" gate="G$1" x="76.2" y="50.8" rot="R270"/>
 <instance part="GND1" gate="1" x="10.16" y="45.72"/>
 <instance part="GND2" gate="1" x="10.16" y="17.78"/>
@@ -1064,12 +1100,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="C8" gate="G$1" x="76.2" y="81.28" rot="R270"/>
 <instance part="GND6" gate="1" x="78.74" y="48.26"/>
 <instance part="GND7" gate="1" x="78.74" y="78.74"/>
-<instance part="GND8" gate="1" x="-53.34" y="83.82"/>
 <instance part="GND9" gate="1" x="96.52" y="53.34"/>
 <instance part="J2" gate="G$1" x="124.46" y="58.42" rot="MR0"/>
 <instance part="J1" gate="G$1" x="-55.88" y="91.44"/>
 <instance part="PAD1" gate="1" x="-45.72" y="88.9" rot="R90"/>
 <instance part="PAD2" gate="1" x="-38.1" y="58.42"/>
+<instance part="PAD3" gate="1" x="-50.8" y="78.74" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -1183,11 +1219,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="114.3" y1="55.88" x2="96.52" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="6"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="GND@1"/>
-<pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="-53.34" y1="88.9" x2="-53.34" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="-5V0" class="0">
@@ -1343,8 +1374,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-20.32" y1="96.52" x2="-63.5" y2="96.52" width="0.1524" layer="91" style="shortdash"/>
 <wire x1="-63.5" y1="96.52" x2="-63.5" y2="81.28" width="0.1524" layer="91" style="shortdash"/>
 <pinref part="U1" gate="G$1" pin="GRD2"/>
-<wire x1="-63.5" y1="81.28" x2="-20.32" y2="81.28" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="-63.5" y1="81.28" x2="-50.8" y2="81.28" width="0.1524" layer="91" style="shortdash"/>
 <label x="-35.56" y="96.52" size="1.778" layer="95"/>
+<pinref part="J1" gate="G$1" pin="GND@1"/>
+<wire x1="-50.8" y1="81.28" x2="-20.32" y2="81.28" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="-53.34" y1="88.9" x2="-50.8" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="88.9" x2="-50.8" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="PAD3" gate="1" pin="P"/>
 </segment>
 </net>
 <net name="N$9" class="0">

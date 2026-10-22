@@ -903,8 +903,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND9" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="IN" library="wirepad" deviceset="SMD2" device=""/>
 <part name="VS" library="wirepad" deviceset="2,15/1,0" device=""/>
-<part name="GUARD" library="wirepad" deviceset="2,15/1,0" device=""/>
+<part name="GRD" library="wirepad" deviceset="2,15/1,0" device=""/>
 <part name="J1" library="54-00248" deviceset="54-00248" device=""/>
+<part name="SHIELD" library="wirepad" deviceset="2,15/1,0" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -954,8 +955,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND9" gate="1" x="96.52" y="53.34"/>
 <instance part="IN" gate="1" x="-45.72" y="88.9" rot="R90"/>
 <instance part="VS" gate="1" x="-38.1" y="58.42"/>
-<instance part="GUARD" gate="1" x="-50.8" y="78.74" rot="R90"/>
+<instance part="GRD" gate="1" x="-50.8" y="78.74" rot="R90"/>
 <instance part="J1" gate="1" x="124.46" y="55.88"/>
+<instance part="SHIELD" gate="1" x="111.76" y="43.18" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -1213,6 +1215,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="111.76" y="50.8"/>
 <pinref part="J1" gate="1" pin="8"/>
 <pinref part="J1" gate="1" pin="SHELL"/>
+<pinref part="SHIELD" gate="1" pin="P"/>
 </segment>
 </net>
 <net name="GUARD" class="0">
@@ -1226,7 +1229,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-50.8" y1="81.28" x2="-20.32" y2="81.28" width="0.1524" layer="91" style="shortdash"/>
 <wire x1="-53.34" y1="88.9" x2="-50.8" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="-50.8" y1="88.9" x2="-50.8" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="GUARD" gate="1" pin="P"/>
+<pinref part="GRD" gate="1" pin="P"/>
 </segment>
 </net>
 <net name="N$9" class="0">

@@ -23,17 +23,17 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -1199,7 +1199,7 @@ design rules under a new name.</description>
 <via x="70.86" y="-4.32" extent="1-16" drill="0.4"/>
 <via x="64.8" y="2.1" extent="1-16" drill="0.4"/>
 </signal>
-<signal name="N$9">
+<signal name="AON">
 <contactref element="R6" pad="2"/>
 <contactref element="J1" pad="2"/>
 <wire x1="16.011" y1="-9.9" x2="15.3" y2="-9.9" width="0.4064" layer="1"/>
@@ -1207,7 +1207,7 @@ design rules under a new name.</description>
 <wire x1="14.8" y1="-9.4" x2="14.8" y2="-7.2" width="0.4064" layer="1"/>
 <wire x1="14.8" y1="-7.2" x2="9.1" y2="-1.5" width="0.4064" layer="1"/>
 </signal>
-<signal name="N$10">
+<signal name="AOP\">
 <contactref element="R2" pad="2"/>
 <contactref element="J1" pad="1"/>
 <wire x1="15.411" y1="1.8" x2="15.1" y2="1.5" width="0.4064" layer="1"/>
