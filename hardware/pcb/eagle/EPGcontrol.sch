@@ -766,6 +766,44 @@ chip</description>
 <text x="-2.825" y="4.875" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <text x="-2.825" y="3.255" size="1.27" layer="27" font="vector">&gt;VALUE</text>
 </package>
+<package name="CONN_FCR7350G_CLF">
+<pad name="1" x="0" y="0" drill="2.2098" diameter="2.7178"/>
+<pad name="2" x="-5.08" y="6.35" drill="1.1938" diameter="1.7018"/>
+<pad name="3" x="5.08" y="6.35" drill="1.1938" diameter="1.7018"/>
+<pad name="4" x="-5.08" y="-3.81" drill="1.1938" diameter="1.7018"/>
+<pad name="5" x="5.08" y="-3.81" drill="1.1938" diameter="1.7018"/>
+<wire x1="-5.9944" y1="-5.5118" x2="5.9944" y2="-5.5118" width="0.1524" layer="51"/>
+<wire x1="5.9944" y1="-5.5118" x2="5.9944" y2="13.4874" width="0.1524" layer="51"/>
+<wire x1="5.9944" y1="13.4874" x2="-5.9944" y2="13.4874" width="0.1524" layer="51"/>
+<wire x1="-5.9944" y1="13.4874" x2="-5.9944" y2="-5.5118" width="0.1524" layer="51"/>
+<wire x1="-4.4958" y1="13.4874" x2="4.4958" y2="13.4874" width="0.1524" layer="51"/>
+<wire x1="4.4958" y1="13.4874" x2="4.4958" y2="27.4828" width="0.1524" layer="51"/>
+<wire x1="4.4958" y1="27.4828" x2="-4.4958" y2="27.4828" width="0.1524" layer="51"/>
+<wire x1="-4.4958" y1="27.4828" x2="-4.4958" y2="13.4874" width="0.1524" layer="51"/>
+<text x="-3.1242" y="-0.635" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
+<wire x1="6.1214" y1="-5.6388" x2="-6.1214" y2="-5.6388" width="0.1524" layer="21"/>
+<wire x1="-6.1214" y1="-5.6388" x2="-6.1214" y2="-4.3688" width="0.1524" layer="21"/>
+<wire x1="-6.1214" y1="13.6144" x2="-4.6228" y2="13.6144" width="0.1524" layer="21"/>
+<wire x1="-4.6228" y1="13.6144" x2="-4.6228" y2="27.6098" width="0.1524" layer="21"/>
+<wire x1="-4.6228" y1="27.6098" x2="4.6228" y2="27.6098" width="0.1524" layer="21"/>
+<wire x1="4.6228" y1="27.6098" x2="4.6228" y2="13.6144" width="0.1524" layer="21"/>
+<wire x1="4.6228" y1="13.6144" x2="6.1214" y2="13.6144" width="0.1524" layer="21"/>
+<wire x1="6.1214" y1="13.6144" x2="6.1214" y2="6.9342" width="0.1524" layer="21"/>
+<wire x1="-6.1214" y1="6.9342" x2="-6.1214" y2="13.6144" width="0.1524" layer="21"/>
+<wire x1="6.1214" y1="5.7912" x2="6.1214" y2="-3.2258" width="0.1524" layer="21"/>
+<wire x1="-6.1214" y1="-3.2258" x2="-6.1214" y2="5.7912" width="0.1524" layer="21"/>
+<wire x1="6.1214" y1="-4.3688" x2="6.1214" y2="-5.6388" width="0.1524" layer="21"/>
+<text x="-3.1242" y="-0.635" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
+<text x="-3.2766" y="-8.255" size="1.016" layer="27" font="vector" rot="SR0">&gt;Name</text>
+</package>
+<package name="0508">
+<smd name="1" x="-0.65" y="0" dx="0.7" dy="2.4" layer="1"/>
+<smd name="2" x="0.65" y="0" dx="0.7" dy="2.4" layer="1"/>
+<wire x1="-0.1" y1="1.2" x2="0.1" y2="1.2" width="0.2" layer="21"/>
+<text x="1.119" y="1.4684" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="1.119" y="-2.0622" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-0.1" y1="-1.2" x2="0.1" y2="-1.2" width="0.2" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="R-US">
@@ -876,6 +914,18 @@ chip</description>
 <wire x1="-10.16" y1="-17.78" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
 <text x="-7.62" y="20.32" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="17.78" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="CONN_001P_000C_1">
+<pin name="1" x="0" y="0" visible="pad" length="middle" direction="pas"/>
+<wire x1="10.16" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="0" x2="8.89" y2="0.8382" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="0" x2="8.89" y2="-0.8382" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="12.7" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-2.54" x2="12.7" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
+<text x="4.1656" y="5.3086" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
+<text x="4.8006" y="-1.0414" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1017,6 +1067,24 @@ chip</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="0508" package="0508">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0201" package="0201">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="INDUCTOR_SM" prefix="L" uservalue="yes">
@@ -1079,6 +1147,15 @@ chip</description>
 </technologies>
 </device>
 <device name="SRU8043" package="SRU8043">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1210S" package="1210S">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1187,6 +1264,25 @@ chip</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FCR7350G" prefix="J">
+<gates>
+<gate name="A" symbol="CONN_001P_000C_1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CONN_FCR7350G_CLF">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="COPYRIGHT" value="Copyright (C) 2026 Ultra Librarian. All rights reserved." constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Cliff" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="FCR7350G" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -7333,29 +7429,29 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="R16" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="49R9"/>
 <part name="C8" library="STEVES_BU" deviceset="CAPS" device="0603S" value="4.7n"/>
 <part name="U$1" library="pipico" deviceset="RASPBERRY-PI-PICO_TH" device=""/>
-<part name="C10" library="rcl" deviceset="C-EU" device="C1206" value="10u"/>
+<part name="C10" library="rcl" deviceset="C-EU" device="C1206" value="10"/>
 <part name="L2" library="STEVES_BU" deviceset="INDUCTOR_SM" device="0805S" value="FERRITE BEAD"/>
 <part name="L1" library="STEVES_BU" deviceset="INDUCTOR_SM" device="0805S" value="FERRITE BEAD"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="C9" library="STEVES_BU" deviceset="CAPS" device="0603S" value="0.1u"/>
-<part name="C11" library="STEVES_BU" deviceset="CAPS" device="0603S" value="0.1u"/>
-<part name="C23" library="rcl" deviceset="C-EU" device="C1206" value="10u"/>
+<part name="C9" library="STEVES_BU" deviceset="CAPS" device="0603S" value="0.1"/>
+<part name="C11" library="STEVES_BU" deviceset="CAPS" device="0603S" value="0.1"/>
+<part name="C23" library="rcl" deviceset="C-EU" device="C1206" value="10"/>
 <part name="PS1" library="STEVES_BU" deviceset="DC-DC-PDS1-DUAL" device="PDM2" value="NMH0509DC"/>
 <part name="U4" library="STEVES_BU" deviceset="TPS7A470X" device=""/>
 <part name="U5" library="STEVES_BU" deviceset="TPS7A33" device=""/>
 <part name="R17" library="rcl" deviceset="R-US_" device="R0805" value="102K"/>
 <part name="R18" library="rcl" deviceset="R-US_" device="R0805" value="332K"/>
-<part name="C12" library="STEVES_BU" deviceset="CAPS" device="0603S" value="0.1u"/>
-<part name="C13" library="STEVES_BU" deviceset="CAPS" device="0603S" value="0.1u"/>
-<part name="C14" library="STEVES_BU" deviceset="CAPS" device="0603S" value="0.1u"/>
-<part name="C15" library="STEVES_BU" deviceset="CAPS" device="0603S" value="0.1u"/>
-<part name="C16" library="rcl" deviceset="C-EU" device="C1206" value="10u"/>
+<part name="C12" library="STEVES_BU" deviceset="CAPS" device="0603S" value="0.1"/>
+<part name="C13" library="STEVES_BU" deviceset="CAPS" device="0603S" value="0.1"/>
+<part name="C14" library="STEVES_BU" deviceset="CAPS" device="0603S" value="0.1"/>
+<part name="C15" library="STEVES_BU" deviceset="CAPS" device="0603S" value="0.1"/>
+<part name="C16" library="rcl" deviceset="C-EU" device="C1206" value="10"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
-<part name="C19" library="rcl" deviceset="C-EU" device="C1206" value="10u"/>
-<part name="C18" library="rcl" deviceset="C-EU" device="C1206" value="10u"/>
-<part name="C21" library="STEVES_BU" deviceset="CAPS" device="0603S" value="0.1u"/>
-<part name="C20" library="STEVES_BU" deviceset="CAPS" device="0603S" value="0.1u"/>
+<part name="C19" library="rcl" deviceset="C-EU" device="C1206" value="10"/>
+<part name="C18" library="rcl" deviceset="C-EU" device="C1206" value="10"/>
+<part name="C21" library="STEVES_BU" deviceset="CAPS" device="0603S" value="0.1"/>
+<part name="C20" library="STEVES_BU" deviceset="CAPS" device="0603S" value="0.1"/>
 <part name="C24" library="rcl" deviceset="C-EU" device="C1206" value="47"/>
 <part name="C26" library="rcl" deviceset="C-EU" device="C1206" value="47"/>
 <part name="D1" library="SparkFun" deviceset="DIODE" device="SMA"/>
@@ -7370,6 +7466,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
+<part name="J9" library="STEVES_BU" deviceset="FCR7350G" device=""/>
+<part name="J10" library="STEVES_BU" deviceset="FCR7350G" device=""/>
+<part name="J11" library="STEVES_BU" deviceset="FCR7350G" device=""/>
+<part name="J12" library="STEVES_BU" deviceset="FCR7350G" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7543,6 +7643,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="GND22" gate="1" x="185.42" y="185.42" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="187.96" y="187.96" size="1.778" layer="96" rot="MR270"/>
 </instance>
+<instance part="J9" gate="A" x="-66.04" y="160.02" rot="R180"/>
+<instance part="J10" gate="A" x="-66.04" y="147.32" rot="R180"/>
+<instance part="J11" gate="A" x="-66.04" y="134.62" rot="R180"/>
+<instance part="J12" gate="A" x="-66.04" y="121.92" rot="R180"/>
 </instances>
 <busses>
 </busses>
