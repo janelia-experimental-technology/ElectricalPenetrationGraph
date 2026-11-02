@@ -303,100 +303,6 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="DAC8568IBPW">
-<packages>
-<package name="SOP65P640X120-16N">
-<circle x="-4.19" y="2.275" radius="0.1" width="0.2" layer="21"/>
-<circle x="-4.19" y="2.275" radius="0.1" width="0.2" layer="51"/>
-<wire x1="-2.2" y1="2.5" x2="2.2" y2="2.5" width="0.127" layer="51"/>
-<wire x1="-2.2" y1="-2.5" x2="2.2" y2="-2.5" width="0.127" layer="51"/>
-<wire x1="-1.765" y1="2.5" x2="1.765" y2="2.5" width="0.127" layer="21"/>
-<wire x1="-2.2" y1="2.5" x2="-2.2" y2="-2.5" width="0.127" layer="51"/>
-<wire x1="2.2" y1="2.5" x2="2.2" y2="-2.5" width="0.127" layer="51"/>
-<wire x1="-3.905" y1="2.75" x2="3.905" y2="2.75" width="0.05" layer="39"/>
-<wire x1="-3.905" y1="-2.75" x2="3.905" y2="-2.75" width="0.05" layer="39"/>
-<wire x1="-3.905" y1="2.75" x2="-3.905" y2="-2.75" width="0.05" layer="39"/>
-<wire x1="3.905" y1="2.75" x2="3.905" y2="-2.75" width="0.05" layer="39"/>
-<text x="-3.5" y="-3" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
-<text x="-3.5" y="3" size="1.27" layer="25">&gt;NAME</text>
-<wire x1="1.765" y1="-2.5" x2="-1.765" y2="-2.5" width="0.127" layer="21"/>
-<smd name="1" x="-2.87" y="2.275" dx="1.57" dy="0.41" layer="1" roundness="25"/>
-<smd name="2" x="-2.87" y="1.625" dx="1.57" dy="0.41" layer="1" roundness="25"/>
-<smd name="3" x="-2.87" y="0.975" dx="1.57" dy="0.41" layer="1" roundness="25"/>
-<smd name="4" x="-2.87" y="0.325" dx="1.57" dy="0.41" layer="1" roundness="25"/>
-<smd name="5" x="-2.87" y="-0.325" dx="1.57" dy="0.41" layer="1" roundness="25"/>
-<smd name="6" x="-2.87" y="-0.975" dx="1.57" dy="0.41" layer="1" roundness="25"/>
-<smd name="7" x="-2.87" y="-1.625" dx="1.57" dy="0.41" layer="1" roundness="25"/>
-<smd name="8" x="-2.87" y="-2.275" dx="1.57" dy="0.41" layer="1" roundness="25"/>
-<smd name="9" x="2.87" y="-2.275" dx="1.57" dy="0.41" layer="1" roundness="25"/>
-<smd name="10" x="2.87" y="-1.625" dx="1.57" dy="0.41" layer="1" roundness="25"/>
-<smd name="11" x="2.87" y="-0.975" dx="1.57" dy="0.41" layer="1" roundness="25"/>
-<smd name="12" x="2.87" y="-0.325" dx="1.57" dy="0.41" layer="1" roundness="25"/>
-<smd name="13" x="2.87" y="0.325" dx="1.57" dy="0.41" layer="1" roundness="25"/>
-<smd name="14" x="2.87" y="0.975" dx="1.57" dy="0.41" layer="1" roundness="25"/>
-<smd name="15" x="2.87" y="1.625" dx="1.57" dy="0.41" layer="1" roundness="25"/>
-<smd name="16" x="2.87" y="2.275" dx="1.57" dy="0.41" layer="1" roundness="25"/>
-</package>
-</packages>
-<symbols>
-<symbol name="DAC8568IBPW">
-<wire x1="-12.7" y1="15.24" x2="15.24" y2="15.24" width="0.41" layer="94"/>
-<wire x1="15.24" y1="15.24" x2="15.24" y2="-17.78" width="0.41" layer="94"/>
-<wire x1="15.24" y1="-17.78" x2="-12.7" y2="-17.78" width="0.41" layer="94"/>
-<wire x1="-12.7" y1="-17.78" x2="-12.7" y2="15.24" width="0.41" layer="94"/>
-<text x="-12.7" y="16.24" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
-<text x="-10.16" y="-19.24" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
-<pin name="!CLR" x="-17.78" y="7.62" length="middle" direction="in"/>
-<pin name="!LDAC" x="-17.78" y="5.08" length="middle" direction="in"/>
-<pin name="!SYNC" x="-17.78" y="2.54" length="middle" direction="in"/>
-<pin name="DIN" x="-17.78" y="0" length="middle" direction="in"/>
-<pin name="SCLK" x="-17.78" y="-2.54" length="middle" direction="in" function="clk"/>
-<pin name="VREFIN/OUT" x="-17.78" y="-5.08" length="middle" direction="in"/>
-<pin name="AVDD" x="20.32" y="12.7" length="middle" direction="pwr" rot="R180"/>
-<pin name="VOUTA" x="20.32" y="7.62" length="middle" direction="out" rot="R180"/>
-<pin name="VOUTB" x="20.32" y="5.08" length="middle" direction="out" rot="R180"/>
-<pin name="VOUTC" x="20.32" y="2.54" length="middle" direction="out" rot="R180"/>
-<pin name="VOUTD" x="20.32" y="0" length="middle" direction="out" rot="R180"/>
-<pin name="VOUTE" x="20.32" y="-2.54" length="middle" direction="out" rot="R180"/>
-<pin name="VOUTF" x="20.32" y="-5.08" length="middle" direction="out" rot="R180"/>
-<pin name="VOUTG" x="20.32" y="-7.62" length="middle" direction="out" rot="R180"/>
-<pin name="VOUTH" x="20.32" y="-10.16" length="middle" direction="out" rot="R180"/>
-<pin name="GND" x="20.32" y="-15.24" length="middle" direction="pwr" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="DAC8568IBPW" prefix="U">
-<gates>
-<gate name="A" symbol="DAC8568IBPW" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOP65P640X120-16N">
-<connects>
-<connect gate="A" pin="!CLR" pad="9"/>
-<connect gate="A" pin="!LDAC" pad="1"/>
-<connect gate="A" pin="!SYNC" pad="2"/>
-<connect gate="A" pin="AVDD" pad="3"/>
-<connect gate="A" pin="DIN" pad="15"/>
-<connect gate="A" pin="GND" pad="14"/>
-<connect gate="A" pin="SCLK" pad="16"/>
-<connect gate="A" pin="VOUTA" pad="4"/>
-<connect gate="A" pin="VOUTB" pad="13"/>
-<connect gate="A" pin="VOUTC" pad="5"/>
-<connect gate="A" pin="VOUTD" pad="12"/>
-<connect gate="A" pin="VOUTE" pad="6"/>
-<connect gate="A" pin="VOUTF" pad="11"/>
-<connect gate="A" pin="VOUTG" pad="7"/>
-<connect gate="A" pin="VOUTH" pad="10"/>
-<connect gate="A" pin="VREFIN/OUT" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SamacSys_Parts">
 <description>&lt;b&gt;https://componentsearchengine.com&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
@@ -1535,45 +1441,45 @@ chip</description>
 <text x="4.8006" y="-1.0414" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
 </symbol>
 <symbol name="LTC2666CUH-16PBF">
-<pin name="MSP2" x="0" y="0" direction="pas"/>
-<pin name="VOUT0" x="0" y="-2.54" direction="out"/>
-<pin name="VOUT1" x="0" y="-5.08" direction="out"/>
-<pin name="VOUT2" x="0" y="-7.62" direction="out"/>
-<pin name="VOUT3" x="0" y="-10.16" direction="out"/>
-<pin name="DNC_2" x="0" y="-12.7" direction="nc"/>
-<pin name="V+" x="0" y="-15.24" direction="pwr"/>
-<pin name="V" x="0" y="-17.78" direction="pwr"/>
-<pin name="MUXOUT" x="0" y="-20.32" direction="out"/>
-<pin name="REFLO_2" x="0" y="-22.86" direction="out"/>
-<pin name="GND_2" x="0" y="-25.4" direction="pas"/>
-<pin name="!LDAC" x="0" y="-27.94" direction="pas"/>
-<pin name="!CS/LD" x="0" y="-30.48" direction="in"/>
-<pin name="SCK" x="0" y="-33.02" direction="in"/>
-<pin name="SDO" x="0" y="-35.56" direction="out"/>
-<pin name="SDI" x="0" y="-38.1" direction="in"/>
-<pin name="TGP" x="50.8" y="-40.64" direction="in" rot="R180"/>
-<pin name="IOVCC" x="50.8" y="-38.1" direction="pwr" rot="R180"/>
-<pin name="DNC" x="50.8" y="-35.56" direction="nc" rot="R180"/>
-<pin name="VOUT4" x="50.8" y="-33.02" direction="out" rot="R180"/>
-<pin name="VOUT5" x="50.8" y="-30.48" direction="out" rot="R180"/>
-<pin name="VOUT6" x="50.8" y="-27.94" direction="out" rot="R180"/>
-<pin name="VOUT7" x="50.8" y="-25.4" direction="out" rot="R180"/>
-<pin name="!CLR" x="50.8" y="-22.86" direction="in" rot="R180"/>
-<pin name="REF" x="50.8" y="-20.32" rot="R180"/>
-<pin name="REFCOMP" x="50.8" y="-17.78" direction="pas" rot="R180"/>
-<pin name="REFLO" x="50.8" y="-15.24" direction="out" rot="R180"/>
-<pin name="VCC" x="50.8" y="-12.7" direction="pwr" rot="R180"/>
-<pin name="GND" x="50.8" y="-10.16" direction="pas" rot="R180"/>
-<pin name="!OVRTMP" x="50.8" y="-7.62" direction="out" rot="R180"/>
-<pin name="MSP0" x="50.8" y="-5.08" direction="pas" rot="R180"/>
-<pin name="MSP1" x="50.8" y="-2.54" direction="pas" rot="R180"/>
-<pin name="EPAD" x="50.8" y="0" direction="pas" rot="R180"/>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="-45.72" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="-45.72" x2="43.18" y2="-45.72" width="0.1524" layer="94"/>
-<wire x1="43.18" y1="-45.72" x2="43.18" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="43.18" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
-<text x="20.6756" y="9.1186" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
-<text x="20.0406" y="6.5786" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
+<pin name="MSP2" x="-25.4" y="17.78" direction="pas"/>
+<pin name="VOUT0" x="-25.4" y="15.24" direction="out"/>
+<pin name="VOUT1" x="-25.4" y="12.7" direction="out"/>
+<pin name="VOUT2" x="-25.4" y="10.16" direction="out"/>
+<pin name="VOUT3" x="-25.4" y="7.62" direction="out"/>
+<pin name="DNC_2" x="-25.4" y="5.08" direction="nc"/>
+<pin name="V+" x="-25.4" y="2.54" direction="pwr"/>
+<pin name="V" x="-25.4" y="0" direction="pwr"/>
+<pin name="MUXOUT" x="-25.4" y="-2.54" direction="out"/>
+<pin name="REFLO_2" x="-25.4" y="-5.08" direction="out"/>
+<pin name="GND_2" x="-25.4" y="-7.62" direction="pas"/>
+<pin name="!LDAC" x="-25.4" y="-10.16" direction="pas"/>
+<pin name="!CS/LD" x="-25.4" y="-12.7" direction="in"/>
+<pin name="SCK" x="-25.4" y="-15.24" direction="in"/>
+<pin name="SDO" x="-25.4" y="-17.78" direction="out"/>
+<pin name="SDI" x="-25.4" y="-20.32" direction="in"/>
+<pin name="TGP" x="25.4" y="-22.86" direction="in" rot="R180"/>
+<pin name="IOVCC" x="25.4" y="-20.32" direction="pwr" rot="R180"/>
+<pin name="DNC" x="25.4" y="-17.78" direction="nc" rot="R180"/>
+<pin name="VOUT4" x="25.4" y="-15.24" direction="out" rot="R180"/>
+<pin name="VOUT5" x="25.4" y="-12.7" direction="out" rot="R180"/>
+<pin name="VOUT6" x="25.4" y="-10.16" direction="out" rot="R180"/>
+<pin name="VOUT7" x="25.4" y="-7.62" direction="out" rot="R180"/>
+<pin name="!CLR" x="25.4" y="-5.08" direction="in" rot="R180"/>
+<pin name="REF" x="25.4" y="-2.54" rot="R180"/>
+<pin name="REFCOMP" x="25.4" y="0" direction="pas" rot="R180"/>
+<pin name="REFLO" x="25.4" y="2.54" direction="out" rot="R180"/>
+<pin name="VCC" x="25.4" y="5.08" direction="pwr" rot="R180"/>
+<pin name="GND" x="25.4" y="7.62" direction="pas" rot="R180"/>
+<pin name="!OVRTMP" x="25.4" y="10.16" direction="out" rot="R180"/>
+<pin name="MSP0" x="25.4" y="12.7" direction="pas" rot="R180"/>
+<pin name="MSP1" x="25.4" y="15.24" direction="pas" rot="R180"/>
+<pin name="EPAD" x="25.4" y="17.78" direction="pas" rot="R180"/>
+<wire x1="-17.78" y1="22.86" x2="-17.78" y2="-27.94" width="0.1524" layer="94"/>
+<wire x1="-17.78" y1="-27.94" x2="17.78" y2="-27.94" width="0.1524" layer="94"/>
+<wire x1="17.78" y1="-27.94" x2="17.78" y2="22.86" width="0.1524" layer="94"/>
+<wire x1="17.78" y1="22.86" x2="-17.78" y2="22.86" width="0.1524" layer="94"/>
+<text x="-4.7244" y="26.8986" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
+<text x="-5.3594" y="24.3586" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -8193,7 +8099,16 @@ We've spent an enormous amount of time creating and checking these footprints an
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
 <package name="SOT23-3">
-<description>SOT23-3</description>
+<description>&lt;h3&gt;SOT23-3X&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Total Size: 3mm x 2.5mm&lt;/li&gt;
+&lt;li&gt;Landing Pad Size: .8mm x .9mm&lt;/li&gt;
+&lt;li&gt;Pitch: 2 (vertical) .95mm (horizontal)&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
 <wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
 <wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
 <wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
@@ -8267,6 +8182,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 <wire x1="-0.9" y1="0.625" x2="0.9" y2="0.625" width="0.2032" layer="21"/>
 <wire x1="-0.9" y1="-0.625" x2="0.9" y2="-0.625" width="0.2032" layer="21"/>
+<wire x1="-1.651" y1="0.762" x2="1.651" y2="0.762" width="0.127" layer="39"/>
+<wire x1="1.651" y1="0.762" x2="1.651" y2="-0.762" width="0.127" layer="39"/>
+<wire x1="1.651" y1="-0.762" x2="-1.651" y2="-0.762" width="0.127" layer="39"/>
+<wire x1="-1.651" y1="-0.762" x2="-1.651" y2="0.762" width="0.127" layer="39"/>
 </package>
 <package name="DIODE-1N4148">
 <wire x1="-2.54" y1="0.762" x2="2.54" y2="0.762" width="0.2032" layer="21"/>
@@ -8549,7 +8468,6 @@ Allows current flow when high potential at base.</description>
 <part name="J6" library="54-00248" deviceset="54-00248" device=""/>
 <part name="J7" library="54-00248" deviceset="54-00248" device=""/>
 <part name="J8" library="54-00248" deviceset="54-00248" device=""/>
-<part name="U1" library="DAC8568IBPW" deviceset="DAC8568IBPW" device=""/>
 <part name="U2" library="SamacSys_Parts" deviceset="ADS131M08QPBSRQ1" device=""/>
 <part name="R1" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="49R9"/>
 <part name="R2" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="49R9"/>
@@ -8620,14 +8538,14 @@ Allows current flow when high potential at base.</description>
 <part name="C17" library="STEVES_BU" deviceset="CAPS" device="0603S" value="220n"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="C22" library="STEVES_BU" deviceset="CAPS" device="0603S" value="150n"/>
-<part name="Q1" library="SparkFun-DiscreteSemi" deviceset="TRANS_NPN" device="-MMBT2222AL" value="2N3904"/>
+<part name="Q1" library="SparkFun-DiscreteSemi" deviceset="TRANS_NPN" device="-MMBT2222AL" value="600mA/40V"/>
 <part name="R19" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="1K00"/>
 <part name="C25" library="STEVES_BU" deviceset="CAPS" device="1206S" value="10"/>
-<part name="D3" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="-BAS16J" value="DIODE"/>
-<part name="Q2" library="SparkFun-DiscreteSemi" deviceset="TRANS_NPN" device="-MMBT2222AL" value="2N3904"/>
+<part name="D3" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="-BAS16J" value="250mA/100V"/>
+<part name="Q2" library="SparkFun-DiscreteSemi" deviceset="TRANS_NPN" device="-MMBT2222AL" value="600mA/40V"/>
 <part name="R20" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="1K00"/>
 <part name="C27" library="STEVES_BU" deviceset="CAPS" device="1206S" value="10"/>
-<part name="D4" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="-BAS16J" value="DIODE"/>
+<part name="D4" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="-BAS16J" value="250mA/100V"/>
 <part name="R21" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="1K00"/>
 <part name="R22" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="1K00"/>
 <part name="U3" library="STEVES_BU" deviceset="LTC2666CUH-16PBF" device=""/>
@@ -8645,10 +8563,6 @@ Allows current flow when high potential at base.</description>
 <instance part="J6" gate="1" x="40.64" y="58.42" rot="R270"/>
 <instance part="J7" gate="1" x="-2.54" y="58.42" rot="R270"/>
 <instance part="J8" gate="1" x="-48.26" y="58.42" rot="R270"/>
-<instance part="U1" gate="A" x="152.4" y="106.68" smashed="yes" rot="R180">
-<attribute name="NAME" x="142.24" y="125.46" size="2.0828" layer="95" ratio="10" rot="SR0"/>
-<attribute name="VALUE" x="142.24" y="87.44" size="2.0828" layer="96" ratio="10" rot="SR0"/>
-</instance>
 <instance part="U2" gate="G$1" x="152.4" y="162.56"/>
 <instance part="R1" gate="G$1" x="106.68" y="144.78"/>
 <instance part="R2" gate="G$1" x="106.68" y="137.16"/>
@@ -8812,7 +8726,7 @@ Allows current flow when high potential at base.</description>
 <instance part="GND5" gate="1" x="185.42" y="152.4" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="187.96" y="154.94" size="1.778" layer="96" rot="MR270"/>
 </instance>
-<instance part="C22" gate="G$1" x="180.34" y="111.76" rot="R90"/>
+<instance part="C22" gate="G$1" x="198.12" y="139.7" rot="R90"/>
 <instance part="Q1" gate="G$1" x="-63.5" y="81.28" smashed="yes">
 <attribute name="NAME" x="-60.96" y="81.28" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="-60.96" y="78.994" size="1.778" layer="96" font="vector"/>
@@ -8853,7 +8767,7 @@ Allows current flow when high potential at base.</description>
 <attribute name="NAME" x="-69.85" y="84.8614" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-74.93" y="77.978" size="1.778" layer="96"/>
 </instance>
-<instance part="U3" gate="A" x="134.62" y="71.12"/>
+<instance part="U3" gate="A" x="152.4" y="104.14"/>
 </instances>
 <busses>
 </busses>
@@ -8965,8 +8879,8 @@ Allows current flow when high potential at base.</description>
 </segment>
 <segment>
 <pinref part="C22" gate="G$1" pin="2"/>
-<wire x1="187.96" y1="111.76" x2="198.12" y2="111.76" width="0.1524" layer="91"/>
-<label x="193.04" y="111.76" size="1.778" layer="95"/>
+<wire x1="205.74" y1="139.7" x2="215.9" y2="139.7" width="0.1524" layer="91"/>
+<label x="210.82" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="-5V0" class="0">
@@ -9032,6 +8946,11 @@ Allows current flow when high potential at base.</description>
 <pinref part="D2" gate="G$1" pin="A"/>
 <wire x1="172.72" y1="-33.02" x2="182.88" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="-33.02" x2="182.88" y2="-35.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U3" gate="A" pin="V"/>
+<wire x1="127" y1="104.14" x2="114.3" y2="104.14" width="0.1524" layer="91"/>
+<label x="114.3" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5V0" class="0">
@@ -9101,9 +9020,9 @@ Allows current flow when high potential at base.</description>
 <wire x1="182.88" y1="10.16" x2="182.88" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="AVDD"/>
-<wire x1="132.08" y1="93.98" x2="119.38" y2="93.98" width="0.1524" layer="91"/>
-<label x="121.92" y="93.98" size="1.778" layer="95"/>
+<wire x1="127" y1="106.68" x2="114.3" y2="106.68" width="0.1524" layer="91"/>
+<label x="114.3" y="106.68" size="1.778" layer="95"/>
+<pinref part="U3" gate="A" pin="V+"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="AVDD"/>
@@ -9115,10 +9034,12 @@ Allows current flow when high potential at base.</description>
 <segment>
 <wire x1="-2.54" y1="193.04" x2="-2.54" y2="200.66" width="0.1524" layer="91"/>
 <label x="-2.54" y="198.12" size="1.778" layer="95" rot="R270"/>
-<pinref part="U1" gate="A" pin="VOUTC"/>
-<wire x1="-2.54" y1="193.04" x2="-2.54" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="104.14" x2="132.08" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="193.04" x2="-2.54" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="114.3" x2="114.3" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="J3" gate="1" pin="7"/>
+<label x="104.14" y="114.3" size="1.778" layer="95"/>
+<pinref part="U3" gate="A" pin="VOUT2"/>
+<wire x1="127" y1="114.3" x2="114.3" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="A0P" class="0">
@@ -9247,20 +9168,24 @@ Allows current flow when high potential at base.</description>
 <segment>
 <wire x1="86.36" y1="193.04" x2="86.36" y2="200.66" width="0.1524" layer="91"/>
 <label x="86.36" y="198.12" size="1.778" layer="95" rot="R270"/>
-<pinref part="U1" gate="A" pin="VOUTA"/>
-<wire x1="86.36" y1="193.04" x2="86.36" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="99.06" x2="132.08" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="193.04" x2="86.36" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="119.38" x2="114.3" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="J1" gate="1" pin="7"/>
+<label x="104.14" y="119.38" size="1.778" layer="95"/>
+<pinref part="U3" gate="A" pin="VOUT0"/>
+<wire x1="127" y1="119.38" x2="114.3" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VS1" class="0">
 <segment>
 <wire x1="43.18" y1="193.04" x2="43.18" y2="200.66" width="0.1524" layer="91"/>
 <label x="43.18" y="198.12" size="1.778" layer="95" rot="R270"/>
-<pinref part="U1" gate="A" pin="VOUTB"/>
-<wire x1="43.18" y1="193.04" x2="43.18" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="101.6" x2="132.08" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="193.04" x2="43.18" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="116.84" x2="114.3" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="J2" gate="1" pin="7"/>
+<label x="104.14" y="116.84" size="1.778" layer="95"/>
+<pinref part="U3" gate="A" pin="VOUT1"/>
+<wire x1="127" y1="116.84" x2="114.3" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="A3P" class="0">
@@ -9338,11 +9263,15 @@ Allows current flow when high potential at base.</description>
 <segment>
 <wire x1="83.82" y1="68.58" x2="83.82" y2="76.2" width="0.1524" layer="91"/>
 <label x="83.82" y="73.66" size="1.778" layer="95" rot="R270"/>
-<wire x1="83.82" y1="76.2" x2="83.82" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="109.22" x2="129.54" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="VOUTE"/>
-<wire x1="129.54" y1="109.22" x2="132.08" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="76.2" x2="83.82" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="96.52" x2="109.22" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="96.52" x2="109.22" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="J5" gate="1" pin="7"/>
+<label x="185.42" y="88.9" size="1.778" layer="95"/>
+<wire x1="109.22" y1="63.5" x2="193.04" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="63.5" x2="193.04" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="U3" gate="A" pin="VOUT4"/>
+<wire x1="193.04" y1="88.9" x2="177.8" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="K4N" class="0">
@@ -9396,10 +9325,16 @@ Allows current flow when high potential at base.</description>
 <segment>
 <wire x1="38.1" y1="68.58" x2="38.1" y2="76.2" width="0.1524" layer="91"/>
 <label x="38.1" y="73.66" size="1.778" layer="95" rot="R270"/>
-<pinref part="U1" gate="A" pin="VOUTF"/>
-<wire x1="38.1" y1="76.2" x2="38.1" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="111.76" x2="132.08" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="76.2" x2="38.1" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="88.9" x2="106.68" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="J6" gate="1" pin="7"/>
+<label x="185.42" y="91.44" size="1.778" layer="95"/>
+<wire x1="106.68" y1="88.9" x2="106.68" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="66.04" x2="106.68" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="60.96" x2="195.58" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="60.96" x2="195.58" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="U3" gate="A" pin="VOUT5"/>
+<wire x1="195.58" y1="91.44" x2="177.8" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="A6P" class="0">
@@ -9459,10 +9394,15 @@ Allows current flow when high potential at base.</description>
 <segment>
 <wire x1="-5.08" y1="68.58" x2="-5.08" y2="76.2" width="0.1524" layer="91"/>
 <label x="-5.08" y="73.66" size="1.778" layer="95" rot="R270"/>
-<pinref part="U1" gate="A" pin="VOUTG"/>
-<wire x1="-5.08" y1="76.2" x2="-5.08" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="114.3" x2="132.08" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="76.2" x2="-5.08" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="101.6" x2="20.32" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="J7" gate="1" pin="7"/>
+<label x="185.42" y="93.98" size="1.778" layer="95"/>
+<wire x1="20.32" y1="101.6" x2="20.32" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="45.72" x2="198.12" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="45.72" x2="198.12" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="U3" gate="A" pin="VOUT6"/>
+<wire x1="198.12" y1="93.98" x2="177.8" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="A7P" class="0">
@@ -9520,19 +9460,27 @@ Allows current flow when high potential at base.</description>
 <wire x1="-50.8" y1="68.58" x2="-50.8" y2="76.2" width="0.1524" layer="91"/>
 <label x="-50.8" y="73.66" size="1.778" layer="95" rot="R270"/>
 <pinref part="J8" gate="1" pin="7"/>
-<pinref part="U1" gate="A" pin="VOUTH"/>
-<wire x1="-50.8" y1="76.2" x2="-50.8" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="-50.8" y1="116.84" x2="132.08" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="76.2" x2="-50.8" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="106.68" x2="15.24" y2="106.68" width="0.1524" layer="91"/>
+<label x="185.42" y="96.52" size="1.778" layer="95"/>
+<wire x1="15.24" y1="106.68" x2="17.78" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="106.68" x2="17.78" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="43.18" x2="200.66" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="43.18" x2="200.66" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="U3" gate="A" pin="VOUT7"/>
+<wire x1="200.66" y1="96.52" x2="177.8" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VS3" class="0">
 <segment>
 <wire x1="-48.26" y1="193.04" x2="-48.26" y2="200.66" width="0.1524" layer="91"/>
 <label x="-48.26" y="198.12" size="1.778" layer="95" rot="R270"/>
-<pinref part="U1" gate="A" pin="VOUTD"/>
-<wire x1="-48.26" y1="193.04" x2="-48.26" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="-48.26" y1="106.68" x2="132.08" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="193.04" x2="-48.26" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="111.76" x2="114.3" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="J4" gate="1" pin="7"/>
+<label x="104.14" y="111.76" size="1.778" layer="95"/>
+<pinref part="U3" gate="A" pin="VOUT3"/>
+<wire x1="127" y1="111.76" x2="114.3" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="AIN7P" class="0">
@@ -9735,9 +9683,9 @@ Allows current flow when high potential at base.</description>
 <label x="172.72" y="180.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="DIN"/>
-<wire x1="170.18" y1="106.68" x2="180.34" y2="106.68" width="0.1524" layer="91"/>
-<label x="172.72" y="106.68" size="1.778" layer="95"/>
+<wire x1="116.84" y1="83.82" x2="127" y2="83.82" width="0.1524" layer="91"/>
+<label x="119.38" y="83.82" size="1.778" layer="95"/>
+<pinref part="U3" gate="A" pin="SDI"/>
 </segment>
 </net>
 <net name="SPIOCLK" class="0">
@@ -9747,9 +9695,10 @@ Allows current flow when high potential at base.</description>
 <pinref part="U$1" gate="G$1" pin="18/SPCK"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="SCLK"/>
-<wire x1="170.18" y1="109.22" x2="180.34" y2="109.22" width="0.1524" layer="91"/>
-<label x="172.72" y="109.22" size="1.778" layer="95"/>
+<wire x1="114.3" y1="88.9" x2="124.46" y2="88.9" width="0.1524" layer="91"/>
+<label x="116.84" y="88.9" size="1.778" layer="95"/>
+<pinref part="U3" gate="A" pin="SCK"/>
+<wire x1="127" y1="88.9" x2="124.46" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="SCLK"/>
@@ -9775,42 +9724,36 @@ Allows current flow when high potential at base.</description>
 <wire x1="170.18" y1="177.8" x2="182.88" y2="177.8" width="0.1524" layer="91"/>
 <label x="172.72" y="177.8" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U3" gate="A" pin="SDO"/>
+<wire x1="127" y1="86.36" x2="114.3" y2="86.36" width="0.1524" layer="91"/>
+<label x="116.84" y="86.36" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="DACCS" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="!SYNC"/>
-<label x="172.72" y="104.14" size="1.778" layer="95"/>
-<wire x1="170.18" y1="104.14" x2="205.74" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="104.14" x2="205.74" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GP13"/>
-<wire x1="205.74" y1="139.7" x2="215.9" y2="139.7" width="0.1524" layer="91"/>
+<label x="116.84" y="91.44" size="1.778" layer="95"/>
+<wire x1="114.3" y1="91.44" x2="127" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="U3" gate="A" pin="!CS/LD"/>
 </segment>
 </net>
 <net name="LDAC" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="!LDAC"/>
-<label x="172.72" y="101.6" size="1.778" layer="95"/>
-<wire x1="170.18" y1="101.6" x2="208.28" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="101.6" x2="208.28" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GP14"/>
-<wire x1="208.28" y1="134.62" x2="215.9" y2="134.62" width="0.1524" layer="91"/>
+<label x="119.38" y="93.98" size="1.778" layer="95"/>
+<wire x1="116.84" y1="93.98" x2="127" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="U3" gate="A" pin="!LDAC"/>
 </segment>
 </net>
 <net name="DACRST" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="!CLR"/>
-<label x="172.72" y="99.06" size="1.778" layer="95"/>
-<wire x1="170.18" y1="99.06" x2="210.82" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="99.06" x2="210.82" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GP15"/>
-<wire x1="210.82" y1="132.08" x2="215.9" y2="132.08" width="0.1524" layer="91"/>
+<label x="190.5" y="127" size="1.778" layer="95"/>
+<wire x1="187.96" y1="127" x2="200.66" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="VREFIN/OUT"/>
-<wire x1="170.18" y1="111.76" x2="180.34" y2="111.76" width="0.1524" layer="91"/>
-<label x="172.72" y="111.76" size="1.778" layer="95"/>
+<wire x1="187.96" y1="139.7" x2="198.12" y2="139.7" width="0.1524" layer="91"/>
+<label x="190.5" y="139.7" size="1.778" layer="95"/>
 <pinref part="C22" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -10121,6 +10064,24 @@ Allows current flow when high potential at base.</description>
 <segment>
 <pinref part="Q1" gate="G$1" pin="B"/>
 <pinref part="R22" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="GP13"/>
+<wire x1="205.74" y1="139.7" x2="215.9" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="GP15"/>
+<wire x1="210.82" y1="132.08" x2="215.9" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="GP14"/>
+<wire x1="208.28" y1="134.62" x2="215.9" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

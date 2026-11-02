@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,21 +53,21 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
-<layer number="58" name="b3D" color="7" fill="1" visible="yes" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
-<layer number="61" name="stand" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="58" name="b3D" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="61" name="stand" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -671,36 +671,6 @@ chip</description>
 <wire x1="2.5" y1="2.5" x2="2.5" y2="1.8" width="0.127" layer="21"/>
 <text x="-2.825" y="4.875" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <text x="-2.825" y="3.255" size="1.27" layer="27" font="vector">&gt;VALUE</text>
-</package>
-<package name="CONN_FCR7350G_CLF">
-<pad name="1" x="0" y="0" drill="2.2098" diameter="2.7178"/>
-<pad name="2" x="-5.08" y="6.35" drill="1.1938" diameter="1.7018"/>
-<pad name="3" x="5.08" y="6.35" drill="1.1938" diameter="1.7018"/>
-<pad name="4" x="-5.08" y="-3.81" drill="1.1938" diameter="1.7018"/>
-<pad name="5" x="5.08" y="-3.81" drill="1.1938" diameter="1.7018"/>
-<wire x1="-5.9944" y1="-5.5118" x2="5.9944" y2="-5.5118" width="0.1524" layer="51"/>
-<wire x1="5.9944" y1="-5.5118" x2="5.9944" y2="13.4874" width="0.1524" layer="51"/>
-<wire x1="5.9944" y1="13.4874" x2="-5.9944" y2="13.4874" width="0.1524" layer="51"/>
-<wire x1="-5.9944" y1="13.4874" x2="-5.9944" y2="-5.5118" width="0.1524" layer="51"/>
-<wire x1="-4.4958" y1="13.4874" x2="4.4958" y2="13.4874" width="0.1524" layer="51"/>
-<wire x1="4.4958" y1="13.4874" x2="4.4958" y2="27.4828" width="0.1524" layer="51"/>
-<wire x1="4.4958" y1="27.4828" x2="-4.4958" y2="27.4828" width="0.1524" layer="51"/>
-<wire x1="-4.4958" y1="27.4828" x2="-4.4958" y2="13.4874" width="0.1524" layer="51"/>
-<text x="-3.1242" y="-0.635" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
-<wire x1="6.1214" y1="-5.6388" x2="-6.1214" y2="-5.6388" width="0.1524" layer="21"/>
-<wire x1="-6.1214" y1="-5.6388" x2="-6.1214" y2="-4.3688" width="0.1524" layer="21"/>
-<wire x1="-6.1214" y1="13.6144" x2="-4.6228" y2="13.6144" width="0.1524" layer="21"/>
-<wire x1="-4.6228" y1="13.6144" x2="-4.6228" y2="27.6098" width="0.1524" layer="21"/>
-<wire x1="-4.6228" y1="27.6098" x2="4.6228" y2="27.6098" width="0.1524" layer="21"/>
-<wire x1="4.6228" y1="27.6098" x2="4.6228" y2="13.6144" width="0.1524" layer="21"/>
-<wire x1="4.6228" y1="13.6144" x2="6.1214" y2="13.6144" width="0.1524" layer="21"/>
-<wire x1="6.1214" y1="13.6144" x2="6.1214" y2="6.9342" width="0.1524" layer="21"/>
-<wire x1="-6.1214" y1="6.9342" x2="-6.1214" y2="13.6144" width="0.1524" layer="21"/>
-<wire x1="6.1214" y1="5.7912" x2="6.1214" y2="-3.2258" width="0.1524" layer="21"/>
-<wire x1="-6.1214" y1="-3.2258" x2="-6.1214" y2="5.7912" width="0.1524" layer="21"/>
-<wire x1="6.1214" y1="-4.3688" x2="6.1214" y2="-5.6388" width="0.1524" layer="21"/>
-<text x="-3.1242" y="-0.635" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
-<text x="-3.2766" y="-8.255" size="1.016" layer="27" font="vector" rot="SR0">&gt;Name</text>
 </package>
 <package name="0508">
 <smd name="1" x="-0.65" y="0" dx="0.7" dy="2.4" layer="1"/>
@@ -1317,6 +1287,158 @@ chip</description>
 <text x="-1.7272" y="-0.635" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Value</text>
 <text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 </package>
+<package name="PAD032">
+<pad name="P$1" x="0" y="0" drill="0.8128"/>
+<text x="0.984" y="0.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0.984" y="-1.54" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="1045_TESTPOINT">
+<pad name="P$1" x="0" y="0" drill="1.5748"/>
+<pad name="P$2" x="5.08" y="0" drill="1.143"/>
+<wire x1="1.778" y1="0" x2="3.556" y2="0" width="0.6096" layer="21"/>
+<wire x1="-1.778" y1="0" x2="-10.16" y2="0" width="0.6096" layer="49"/>
+<wire x1="-9.398" y1="0.508" x2="-9.398" y2="-0.508" width="0" layer="49"/>
+<wire x1="-9.398" y1="-0.508" x2="-7.112" y2="-0.508" width="0" layer="49"/>
+<wire x1="-7.112" y1="-0.508" x2="-7.112" y2="0.508" width="0" layer="49"/>
+<wire x1="-7.112" y1="0.508" x2="-9.398" y2="0.508" width="0" layer="49"/>
+<wire x1="-4.445" y1="0.508" x2="-4.445" y2="-0.508" width="0" layer="49"/>
+<wire x1="-4.445" y1="-0.508" x2="-5.715" y2="-0.508" width="0" layer="49"/>
+<wire x1="-5.715" y1="-0.508" x2="-5.715" y2="0.508" width="0" layer="49"/>
+<wire x1="-5.715" y1="0.508" x2="-4.445" y2="0.508" width="0" layer="49"/>
+<text x="0.254" y="2.286" size="1.27" layer="25">&gt;NAME</text>
+<text x="0.254" y="-3.556" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="PAD_86_135">
+<pad name="P$1" x="0" y="0" drill="2.1844" diameter="3.302"/>
+</package>
+<package name="SPRINGPIN_0997">
+<smd name="P$1" x="0" y="0" dx="5.08" dy="5.08" layer="1" roundness="100"/>
+<circle x="0" y="0" radius="1.9812" width="0.0254" layer="49"/>
+<circle x="0" y="0" radius="0.762" width="0.0254" layer="49"/>
+</package>
+<package name="SPRINGPIN_0906">
+<pad name="P$1" x="0" y="0" drill="0.508"/>
+<circle x="0" y="0" radius="0.9144" width="0.254" layer="21"/>
+<circle x="0" y="0" radius="0.9144" width="0.0254" layer="49"/>
+</package>
+<package name="0851_SPRINGPIN">
+<pad name="P$1" x="0" y="0" drill="2.286"/>
+<text x="-2.286" y="4.826" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.286" y="2.794" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="PAD1MM">
+<smd name="P$1" x="0" y="0" dx="1" dy="1" layer="1"/>
+<text x="0.984" y="0.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0.984" y="-1.54" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="3544">
+<pad name="P$1" x="-1.8288" y="0" drill="1.651"/>
+<pad name="P$2" x="1.8288" y="0" drill="1.651"/>
+<wire x1="-2.032" y1="1.397" x2="-1.905" y2="1.397" width="0" layer="21"/>
+<wire x1="-2.032" y1="1.397" x2="2.032" y2="1.397" width="0.254" layer="21"/>
+<wire x1="-0.508" y1="-0.635" x2="0.508" y2="-0.635" width="0.254" layer="21"/>
+<text x="-2.921" y="3.81" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.921" y="2.032" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="PAD045">
+<pad name="1" x="0" y="0" drill="1.143"/>
+</package>
+<package name="PAD_040">
+<pad name="P$1" x="0" y="0" drill="1.016"/>
+</package>
+<package name="BANANA_105-0754-001">
+<description>CONN JACK STD INSUL HORIZ BANANA</description>
+<pad name="P$1" x="0" y="0" drill="1.3208"/>
+<pad name="P$2" x="-10.16" y="0" drill="1.3208"/>
+<wire x1="-10.16" y1="1.27" x2="-10.16" y2="2.032" width="0.127" layer="21"/>
+<wire x1="-10.16" y1="2.032" x2="0" y2="2.032" width="0.127" layer="21"/>
+<wire x1="0" y1="2.032" x2="0" y2="1.27" width="0.127" layer="21"/>
+<wire x1="0" y1="-1.27" x2="0" y2="-2.032" width="0.127" layer="21"/>
+<wire x1="0" y1="-2.032" x2="-10.16" y2="-2.032" width="0.127" layer="21"/>
+<wire x1="-10.16" y1="-2.032" x2="-10.16" y2="-1.27" width="0.127" layer="21"/>
+<text x="-8.096" y="5.74" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-8.096" y="2.946" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+</package>
+<package name="BANANA_TH_RA">
+<pad name="1A" x="-2.54" y="2.54" drill="1.6"/>
+<pad name="1B" x="2.54" y="2.54" drill="1.6"/>
+<pad name="1C" x="2.54" y="-2.54" drill="1.6"/>
+<pad name="1D" x="-2.54" y="-2.54" drill="1.6"/>
+<wire x1="-21.336" y1="6.604" x2="-21.336" y2="-6.604" width="0.127" layer="21"/>
+<wire x1="-21.336" y1="-6.604" x2="-12.192" y2="-6.604" width="0.127" layer="21"/>
+<wire x1="-12.192" y1="-6.604" x2="-4.318" y2="-4.318" width="0.127" layer="21"/>
+<wire x1="-4.318" y1="-4.318" x2="-4.318" y2="4.318" width="0.127" layer="21"/>
+<wire x1="-4.318" y1="4.318" x2="-12.192" y2="6.604" width="0.127" layer="21"/>
+<wire x1="-12.192" y1="6.604" x2="-21.336" y2="6.604" width="0.127" layer="21"/>
+<text x="-2.632" y="6.326" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.632" y="5.024" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="7773">
+<pad name="1" x="-2.54" y="0" drill="1.7018"/>
+<pad name="2" x="2.54" y="0" drill="1.7018"/>
+<pad name="3" x="2.54" y="5.4356" drill="1.7018"/>
+<pad name="4" x="-2.54" y="5.4356" drill="1.7018"/>
+<wire x1="-2.54" y1="-3.175" x2="2.54" y2="-3.175" width="0.127" layer="49"/>
+<text x="-2.815" y="10.125" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.735" y="8.35" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="8190">
+<pad name="1" x="-2.5019" y="0" drill="1.8542"/>
+<pad name="2" x="2.5019" y="0" drill="1.8542"/>
+<pad name="3" x="2.5019" y="7.493" drill="1.8542"/>
+<pad name="4" x="-2.2733" y="7.493" drill="1.8542"/>
+<wire x1="-2.54" y1="-5.08" x2="2.54" y2="-5.08" width="0.127" layer="49"/>
+<text x="-2.815" y="12.665" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.735" y="10.89" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-3.81" y="2.54" size="1.27" layer="21" font="vector">#6 0.172
+screw ht</text>
+</package>
+<package name="CON1_1MM_TH">
+<wire x1="-0.7" y1="-0.7" x2="0.7" y2="-0.7" width="0.25" layer="21"/>
+<wire x1="0.7" y1="-0.7" x2="0.7" y2="0.7" width="0.25" layer="21"/>
+<wire x1="0.7" y1="0.7" x2="-0.7" y2="0.7" width="0.25" layer="21"/>
+<pad name="1" x="0" y="0" drill="0.4318" diameter="0.762" shape="square" rot="R270"/>
+<wire x1="-0.7" y1="0.7" x2="-0.7" y2="-0.7" width="0.25" layer="21"/>
+</package>
+<package name="BANANA-1">
+<description>CT2912-5 
+ 	CONN BANANA JACK SOLDER</description>
+<pad name="P$1" x="0" y="0" drill="2.1"/>
+<circle x="0" y="0" radius="7.3" width="0.254" layer="21"/>
+<text x="-3.016" y="13.36" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-3.016" y="10.566" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+</package>
+<package name="MM0321">
+<pad name="P$1" x="0" y="0" drill="3.683" diameter="6.4516"/>
+<text x="-3.96" y="7.3275" size="1.27" layer="25">&gt;NAME</text>
+<text x="-4.06" y="5.7" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="0376-0-67-80-07-27-10-0">
+<pad name="P$1" x="0" y="0" drill="2.8702"/>
+<text x="-2.286" y="8.636" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.286" y="5.4102" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="PAD010">
+<pad name="P$1" x="0" y="0" drill="0.254" diameter="0.508"/>
+<text x="0.984" y="0.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0.984" y="-1.54" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="PAD_042">
+<pad name="P$1" x="0" y="0" drill="1.0668"/>
+<text x="-0.8636" y="1.3462" size="1.016" layer="25" font="vector">&gt;NAME</text>
+<text x="-0.8382" y="3.048" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+</package>
+<package name="1MM-ID">
+<pad name="P$1" x="0" y="0" drill="1"/>
+<text x="-2.1462" y="3.1288" size="1" layer="25" font="vector" ratio="12">&gt;NAME</text>
+<text x="-2.37" y="1.625" size="1" layer="27" font="vector" ratio="12">&gt;VALUE</text>
+</package>
+<package name="574">
+<pad name="P$1" x="0" y="0" drill="5.4102"/>
+<circle x="0" y="0" radius="3.9624" width="0.127" layer="21"/>
+<text x="-2.691" y="6.5484" size="1.016" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-2.691" y="4.2878" size="1.016" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="R-US">
@@ -1428,18 +1550,6 @@ chip</description>
 <text x="-7.62" y="20.32" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="17.78" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="CONN_001P_000C_1">
-<pin name="1" x="0" y="0" visible="pad" length="middle" direction="pas"/>
-<wire x1="10.16" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="0" x2="8.89" y2="0.8382" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="0" x2="8.89" y2="-0.8382" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-2.54" x2="12.7" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="-2.54" x2="12.7" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
-<text x="4.1656" y="5.3086" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
-<text x="4.8006" y="-1.0414" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
-</symbol>
 <symbol name="LTC2666CUH-16PBF">
 <pin name="MSP2" x="-25.4" y="17.78" direction="pas"/>
 <pin name="VOUT0" x="-25.4" y="15.24" direction="out"/>
@@ -1480,6 +1590,11 @@ chip</description>
 <wire x1="17.78" y1="22.86" x2="-17.78" y2="22.86" width="0.1524" layer="94"/>
 <text x="-4.7244" y="26.8986" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
 <text x="-5.3594" y="24.3586" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
+</symbol>
+<symbol name="CON1">
+<pin name="1" x="0" y="0" visible="pad" length="middle" rot="R180"/>
+<text x="-3.556" y="-2.159" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.556" y="-4.699" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1822,25 +1937,6 @@ chip</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="FCR7350G" prefix="J">
-<gates>
-<gate name="A" symbol="CONN_001P_000C_1" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CONN_FCR7350G_CLF">
-<connects>
-<connect gate="A" pin="1" pad="1"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="COPYRIGHT" value="Copyright (C) 2026 Ultra Librarian. All rights reserved." constant="no"/>
-<attribute name="MANUFACTURER_NAME" value="Cliff" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="FCR7350G" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="LTC2666CUH-16PBF" prefix="U">
 <gates>
 <gate name="A" symbol="LTC2666CUH-16PBF" x="0" y="0"/>
@@ -1982,6 +2078,189 @@ chip</description>
 <attribute name="MANUFACTURER_NAME" value="Analog Devices Inc" constant="no"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="LTC2666CUH-16#PBF" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CON1" prefix="P" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="CON1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PAD032">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1045_TP" package="1045_TESTPOINT">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PAD_86" package="PAD_86_135">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0997" package="SPRINGPIN_0997">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0906" package="SPRINGPIN_0906">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0851" package="0851_SPRINGPIN">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PAD1MM" package="PAD1MM">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3544" package="3544">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1 P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PAD045" package="PAD045">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PAD040" package="PAD_040">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="BANANA" package="BANANA_105-0754-001">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1 P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="BANANA_CT3151" package="BANANA_TH_RA">
+<connects>
+<connect gate="G$1" pin="1" pad="1A 1B 1C 1D"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="7773/7774" package="7773">
+<connects>
+<connect gate="G$1" pin="1" pad="1 2 3 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="8190" package="8190">
+<connects>
+<connect gate="G$1" pin="1" pad="1 2 3 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="CON1_1MM_TH" package="CON1_1MM_TH">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="BANANA-1" package="BANANA-1">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="MM0321" package="MM0321">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0376-0-67-80-07-27-10-0" package="0376-0-67-80-07-27-10-0">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PAD010" package="PAD010">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PAD042" package="PAD_042">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1MM" package="1MM-ID">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="574" package="574">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -8531,10 +8810,6 @@ Allows current flow when high potential at base.</description>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
-<part name="J9" library="STEVES_BU" deviceset="FCR7350G" device=""/>
-<part name="J10" library="STEVES_BU" deviceset="FCR7350G" device=""/>
-<part name="J11" library="STEVES_BU" deviceset="FCR7350G" device=""/>
-<part name="J12" library="STEVES_BU" deviceset="FCR7350G" device=""/>
 <part name="C17" library="STEVES_BU" deviceset="CAPS" device="0603S" value="220n"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="Q1" library="SparkFun-DiscreteSemi" deviceset="TRANS_NPN" device="-MMBT2222AL" value="600mA/40V"/>
@@ -8552,6 +8827,14 @@ Allows current flow when high potential at base.</description>
 <part name="C29" library="STEVES_BU" deviceset="CAPS" device="0805S" value="1"/>
 <part name="C30" library="STEVES_BU" deviceset="CAPS" device="0805S" value="1"/>
 <part name="C31" library="STEVES_BU" deviceset="CAPS" device="0805S" value=".01"/>
+<part name="P1" library="STEVES_BU" deviceset="CON1" device="BANANA"/>
+<part name="P2" library="STEVES_BU" deviceset="CON1" device="574"/>
+<part name="P3" library="STEVES_BU" deviceset="CON1" device="BANANA"/>
+<part name="P4" library="STEVES_BU" deviceset="CON1" device="BANANA"/>
+<part name="P5" library="STEVES_BU" deviceset="CON1" device="BANANA"/>
+<part name="P6" library="STEVES_BU" deviceset="CON1" device="574"/>
+<part name="P7" library="STEVES_BU" deviceset="CON1" device="574"/>
+<part name="P8" library="STEVES_BU" deviceset="CON1" device="574"/>
 </parts>
 <sheets>
 <sheet>
@@ -8721,10 +9004,6 @@ Allows current flow when high potential at base.</description>
 <instance part="GND22" gate="1" x="185.42" y="185.42" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="187.96" y="187.96" size="1.778" layer="96" rot="MR270"/>
 </instance>
-<instance part="J9" gate="A" x="-66.04" y="160.02" rot="R180"/>
-<instance part="J10" gate="A" x="-66.04" y="147.32" rot="R180"/>
-<instance part="J11" gate="A" x="-66.04" y="134.62" rot="R180"/>
-<instance part="J12" gate="A" x="-66.04" y="121.92" rot="R180"/>
 <instance part="C17" gate="G$1" x="175.26" y="152.4" rot="R90"/>
 <instance part="GND5" gate="1" x="185.42" y="152.4" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="187.96" y="154.94" size="1.778" layer="96" rot="MR270"/>
@@ -8774,6 +9053,14 @@ Allows current flow when high potential at base.</description>
 <instance part="C29" gate="G$1" x="101.6" y="106.68"/>
 <instance part="C30" gate="G$1" x="109.22" y="104.14"/>
 <instance part="C31" gate="G$1" x="200.66" y="99.06" rot="R90"/>
+<instance part="P1" gate="G$1" x="226.06" y="68.58"/>
+<instance part="P2" gate="G$1" x="238.76" y="50.8"/>
+<instance part="P3" gate="G$1" x="226.06" y="63.5"/>
+<instance part="P4" gate="G$1" x="226.06" y="58.42"/>
+<instance part="P5" gate="G$1" x="226.06" y="53.34"/>
+<instance part="P6" gate="G$1" x="238.76" y="55.88"/>
+<instance part="P7" gate="G$1" x="238.76" y="60.96"/>
+<instance part="P8" gate="G$1" x="238.76" y="68.58"/>
 </instances>
 <busses>
 </busses>
@@ -10176,4 +10463,10 @@ Allows current flow when high potential at base.</description>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
