@@ -95,6 +95,39 @@ Clock: `sample_index` is the master timeline. Absolute time of sample *i* =
 `start_time_utc + i / sample_rate`. All events reference `sample_index`, so nothing depends
 on host-side timing jitter.
 
+## A.7 Implemented semantics (firmware v0.2 — resolves several "Open items")
+
+**NACK error codes** (`NACK = cmd_type, seq(0), err`): 1 unknown command · 2 bad payload ·
+3 busy (e.g. CONFIGURE while streaming) · 4 bad channel · 5 bad value · 6 no ADC / cannot
+stream · 7 ADC configuration failed.
+
+**rate_code table:** index into INFO's `supported_rate_codes` = `[250, 500, 1000, 2000, 4000]` Hz.
+**Block size:** 50 ms (12/25/50/100/200 rows at the five rates; hard cap 256 rows).
+**ERROR events** (`a` = code): 1 sample gap (`b` = samples lost; ring overflow) · 2 USB transmit
+drop (`b` = frames) · 3 Vs DAC at its limit (servo cannot correct further).
+**SAMPLES `status`:** bit0 = a channel is clipped (|code| ≥ 99 % FS, 97 % to clear).
+
+**START** is ACKed, then the device emits at index 0 a `COMMENT` (firmware, ADC present or
+SIMULATED, rate) and, per active channel, `VS_CHANGE(a=b=current, "start")`, `RI_CHANGE`,
+`SERVO_STATE`, so a recording started at START is self-contained. Commands received while
+stopped are applied but not logged (the START snapshot records the result). Events are sent
+before the SAMPLES block that contains their `sample_index`.
+
+**SERVO** payload `ch, mode, target:u16, deadband:u16, flags:u8`: `target` is offset-binary
+(`code24 = (target − 32768)·256`; **0 = centre**), `deadband` is in units of 256 ADC codes
+(**0 = default 3 % of full scale**), `flags` bit0 = freeze. *Acquire* steps Vs every ≥150 ms
+until the baseline has been within the deadband for ~1 s, then switches itself to *track* and
+logs a `SERVO_STATE`. *Track* moves Vs only when the baseline (τ = 2 s) passes 80 % of full
+scale. Both pause during a calibration pulse and for 1.5 s after any Vs change.
+
+**CAL_PULSE** (`ch, action, dur_ms`): `dur_ms = 0` keeps the pulse on until `action = 0`.
+The pulse is **−50 mV on the Vs line** (events `CAL_PULSE a=1/0, b=−50000`); it is *not* logged
+as a `VS_CHANGE`, so the reader's applied-Vs excludes it and the pulse is visible in the
+uncompensated trace — exclude the logged cal interval when fitting drift.
+
+**Sample timing:** every rate comes from an 8.192 MHz ADC clock; 250 Hz is 500 Hz averaged ×2.
+`PING` is answered with `ACK` (no periodic `STATUS` yet).
+
 ---
 
 # B. Data file format
@@ -156,7 +189,7 @@ append-only frame log alongside as a belt-and-suspenders capture that can be re-
 ---
 
 ## Open items
-- Exact rate_code table, block size, STATUS cadence, NACK error codes.
+- ~~Exact rate_code table, block size, NACK error codes~~ → defined in A.7. STATUS cadence still open.
 - Whether to compress `/samples` with gzip (smaller) vs lzf (faster) by default.
 - Confirm ADS131M08 code scaling (FS, ref) against datasheet at implementation.
 - Python reference implementation of the framing + reader (lands in `software/`).

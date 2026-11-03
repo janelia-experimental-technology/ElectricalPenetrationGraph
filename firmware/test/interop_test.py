@@ -33,7 +33,8 @@ def _parse_all(blob):
 def test_c_to_python():
     subprocess.run([C_BIN, "emit", C_FILE], check=True)
     frames = _parse_all(open(C_FILE, "rb").read())
-    by_type = {t: (f, p) for (t, f, p) in frames}
+    assert len(frames) == 4, len(frames)
+    by_type = {t: (f, p) for (t, f, p) in frames[:3]}
     assert set(by_type) == {P.T_INFO, P.T_SAMPLES, P.T_EVENT}, by_type.keys()
 
     info = P.Info.decode(by_type[P.T_INFO][1])
@@ -48,6 +49,15 @@ def test_c_to_python():
     assert (ev.event_type, ev.channel, ev.sample_index, ev.a, ev.b, ev.text) == \
            (P.EV_VS_CHANGE, 2, 54321, 32768, 40000, "track")
     print("  PASS C->Python: INFO, SAMPLES, EVENT decoded with matching fields")
+
+    # 4th frame: large 200x8 block (4.8 KB) as the firmware sends at 4 kHz
+    t, _f, p = frames[3]
+    big = P.SampleBlock.decode(p)
+    assert t == P.T_SAMPLES and big.block_seq == 8 and big.first_sample_index == 5000
+    assert len(big.samples) == 200 and big.channel_mask == 0xFF
+    want = [[((r * 8 + c) * 7919 % 16000000) - 8000000 for c in range(8)] for r in range(200)]
+    assert big.samples == want
+    print("  PASS C->Python: large 200x8 SAMPLES block (4.8 KB) intact")
 
 
 def test_python_to_c():

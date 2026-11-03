@@ -6,7 +6,7 @@ A minimal but real acquisition app (Stylet+d replacement, in progress):
     calibration pulse — each sent to the device and echoed as a logged event
   * Record / Stop with directory + filename + operator/experiment metadata
   * insert timestamped comment markers into the recording
-Driven by the in-process mock device by default; a pyserial transport drops in later
+Driven by the in-process mock device by default; pass --port to drive the real device
 behind the same protocol.
 
 Run:  python scripts/run_gui.py
@@ -27,13 +27,15 @@ from .recorder import HDF5Recorder
 
 def run_mock_gui(rate_hz: int = 1000, channel_mask: int = 0xFF,
                  detrend_fc: float = 0.5, window_s: float = 10.0,
-                 block_ms: float = 50.0):
+                 block_ms: float = 50.0, dev=None, title: str = "mock"):
+    """Live GUI. `dev` defaults to an in-process MockDevice; pass a SerialGuiBridge
+    (epgrig.serial_device) to drive the real RP2040 device instead."""
     import pyqtgraph as pg  # lazy
     from pyqtgraph.Qt import QtCore, QtWidgets
 
     chans = P.active_channels(channel_mask)
     nch = len(chans)
-    dev = MockDevice(channel_mask=channel_mask, rate_hz=rate_hz)
+    dev = dev if dev is not None else MockDevice(channel_mask=channel_mask, rate_hz=rate_hz)
     info = dev.info
     code_to_in = (info.adc_vref_mv / 1000.0) / (1 << 23) / info.fixed_gain
     vs_half_v = info.vs_range_mv / 2000.0
@@ -58,7 +60,7 @@ def run_mock_gui(rate_hz: int = 1000, channel_mask: int = 0xFF,
 
     app = QtWidgets.QApplication.instance() or QtWidgets.QApplication([])
     win = QtWidgets.QMainWindow()
-    win.setWindowTitle("EPG rig — acquisition (mock)")
+    win.setWindowTitle(f"EPG rig — acquisition ({title})")
     central = QtWidgets.QWidget(); win.setCentralWidget(central)
     root = QtWidgets.QHBoxLayout(central)
 

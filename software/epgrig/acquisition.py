@@ -14,12 +14,16 @@ class StreamConsumer:
     def __init__(self, recorder: Optional[HDF5Recorder] = None,
                  on_block: Optional[Callable[[P.SampleBlock], None]] = None,
                  on_event: Optional[Callable[[P.Event], None]] = None,
-                 on_info: Optional[Callable[[P.Info], None]] = None):
+                 on_info: Optional[Callable[[P.Info], None]] = None,
+                 on_ack: Optional[Callable[[int], None]] = None,
+                 on_nack: Optional[Callable[[int, int], None]] = None):
         self.parser = P.FrameParser()
         self.recorder = recorder
         self.on_block = on_block
         self.on_event = on_event
         self.on_info = on_info
+        self.on_ack = on_ack          # on_ack(cmd_type)
+        self.on_nack = on_nack        # on_nack(cmd_type, err_code)
         self.info: Optional[P.Info] = None
         self.n_blocks = 0
         self.n_samples = 0
@@ -46,7 +50,13 @@ class StreamConsumer:
                 self.info = P.Info.decode(payload)
                 if self.on_info:
                     self.on_info(self.info)
-            # ACK/NACK/STATUS ignored here
+            elif mtype == P.T_ACK:
+                if self.on_ack and len(payload) >= 1:
+                    self.on_ack(payload[0])
+            elif mtype == P.T_NACK:
+                if self.on_nack and len(payload) >= 1:
+                    self.on_nack(payload[0], payload[2] if len(payload) >= 3 else 0)
+            # STATUS ignored here
 
     def feed_all(self, chunks: Iterable[bytes]) -> None:
         for c in chunks:
