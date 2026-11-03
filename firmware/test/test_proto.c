@@ -62,9 +62,25 @@ static void test_frame_parser(void){
     epg_parser_feed(&pp, bad, fl); epg_parser_feed(&pp, frame2, fl2);
     CHECK(pp.crc_errors>=1 && g_seen>=1, "parser flags CRC error and resyncs");
 }
+/* A realistic 50 ms @ 4 kHz x 8 ch sample block (4.8 KB) must encode and decode intact. */
+static void test_large_frame(void){
+    enum { ROWS = 200, NCH = 8 };
+    static uint8_t pay[17 + ROWS*NCH*3], frame[EPG_FRAME_MAX(sizeof pay)], dec[sizeof pay + 8];
+    size_t pl = epg_build_sampleblock_header(1,0,4,0xFF,ROWS,0,pay);
+    for (int i=0;i<ROWS*NCH;i++){ epg_pack_i24((i*7919 % 16000000) - 8000000, pay+pl); pl+=3; }
+    size_t fl = epg_encode_frame(T_SAMPLES,0,pay,pl,frame);
+    CHECK(fl <= EPG_FRAME_MAX(pl) && frame[fl-1]==0, "large frame fits EPG_FRAME_MAX and is delimited");
+    int zeros=0; for (size_t i=0;i<fl-1;i++) if(frame[i]==0) zeros++;
+    CHECK(zeros==0, "no 0x00 inside a large COBS frame");
+    int ok=0; size_t bl = epg_cobs_decode(frame, fl-1, dec, &ok);
+    CHECK(ok && bl==pl+4, "large frame COBS decodes to type+flags+payload+crc");
+    uint16_t got = dec[bl-2] | (dec[bl-1]<<8);
+    CHECK(got==epg_crc16(dec,bl-2) && dec[0]==T_SAMPLES && memcmp(dec+2,pay,pl)==0,
+          "large frame CRC and payload intact");
+}
 static int selftest(void){
     printf("C protocol selftest:\n");
-    test_cobs(); test_crc(); test_i24(); test_frame_parser();
+    test_cobs(); test_crc(); test_i24(); test_frame_parser(); test_large_frame();
     if (fails){ printf("FAILED (%d)\n", fails); return 1; }
     printf("All C protocol tests passed.\n"); return 0;
 }
@@ -72,7 +88,7 @@ static int selftest(void){
 /* ---- emit known frames ---- */
 static int emit(const char *path){
     FILE *f = fopen(path,"wb"); if(!f){perror("open");return 1;}
-    uint8_t pay[512], frame[600]; size_t pl, fl;
+    uint8_t pay[512]; uint8_t frame[EPG_FRAME_MAX(512)]; size_t pl, fl;
 
     epg_info_t info = { EPG_PROTO_VERSION, 0,1,0, 8, 1200,800,1000,16,24, RATES,5, SERIAL };
     pl = epg_build_info(&info, pay);
@@ -84,6 +100,13 @@ static int emit(const char *path){
 
     pl = epg_build_event(EV_VS_CHANGE,2,54321,32768,40000,"track",5,pay);
     fl = epg_encode_frame(T_EVENT,0,pay,pl,frame); fwrite(frame,1,fl,f);
+    /* large block: 200 rows x 8 ch (what the firmware sends at 4 kHz / 50 ms) */
+    {
+        static uint8_t bp[17 + 200*8*3], bf[EPG_FRAME_MAX(sizeof bp)];
+        size_t bl = epg_build_sampleblock_header(8,5000,4,0xFF,200,0,bp);
+        for (int i=0;i<200*8;i++){ epg_pack_i24(((i*7919) % 16000000) - 8000000, bp+bl); bl+=3; }
+        size_t bfl = epg_encode_frame(T_SAMPLES,0,bp,bl,bf); fwrite(bf,1,bfl,f);
+    }
     fclose(f); return 0;
 }
 

@@ -60,18 +60,40 @@ static size_t w16(uint8_t *p, uint16_t v) { p[0]=v&0xFF; p[1]=(v>>8)&0xFF; retur
 static size_t w32(uint8_t *p, uint32_t v) { for(int i=0;i<4;i++) p[i]=(v>>(8*i))&0xFF; return 4; }
 static size_t w64(uint8_t *p, uint64_t v) { for(int i=0;i<8;i++) p[i]=(v>>(8*i))&0xFF; return 8; }
 
-/* ---- frame ---- */
+/* ---- frame ----
+ * Streaming COBS+CRC encoder: no intermediate body buffer, so payloads of any size fit
+ * as long as `frame` holds EPG_FRAME_MAX(plen) bytes. (The original version staged the
+ * body in a 512-byte stack array, which overflowed on real sample blocks of 1-6 KB.)
+ * Output is byte-identical to Python's cobs_encode(type|flags|payload|crc16) + 0x00. */
+typedef struct { uint8_t *out; size_t wr, code_idx; uint8_t code; uint16_t crc; } enc_t;
+
+static void enc_put(enc_t *e, uint8_t b) {
+    if (b == 0) {
+        e->out[e->code_idx] = e->code; e->code_idx = e->wr++; e->code = 1;
+    } else {
+        e->out[e->wr++] = b;
+        if (++e->code == 0xFF) { e->out[e->code_idx] = e->code; e->code_idx = e->wr++; e->code = 1; }
+    }
+}
+static void enc_put_crc(enc_t *e, uint8_t b) {   /* byte covered by the CRC */
+    e->crc ^= (uint16_t)b << 8;
+    for (int k = 0; k < 8; k++)
+        e->crc = (e->crc & 0x8000) ? (uint16_t)((e->crc << 1) ^ 0x1021) : (uint16_t)(e->crc << 1);
+    enc_put(e, b);
+}
+
 size_t epg_encode_frame(uint8_t type, uint8_t flags,
                         const uint8_t *payload, size_t plen, uint8_t *frame) {
-    uint8_t body[512];
-    size_t b = 0;
-    body[b++] = type; body[b++] = flags;
-    if (plen) { memcpy(body + b, payload, plen); b += plen; }
-    uint16_t crc = epg_crc16(body, b);
-    b += w16(body + b, crc);
-    size_t enc = epg_cobs_encode(body, b, frame);
-    frame[enc++] = 0x00;  /* delimiter */
-    return enc;
+    enc_t e; e.out = frame; e.wr = 1; e.code_idx = 0; e.code = 1; e.crc = 0x0000;
+    enc_put_crc(&e, type);
+    enc_put_crc(&e, flags);
+    for (size_t i = 0; i < plen; i++) enc_put_crc(&e, payload[i]);
+    uint16_t crc = e.crc;
+    enc_put(&e, (uint8_t)(crc & 0xFF));
+    enc_put(&e, (uint8_t)(crc >> 8));
+    e.out[e.code_idx] = e.code;
+    frame[e.wr++] = 0x00;  /* delimiter */
+    return e.wr;
 }
 
 /* ---- payload builders ---- */
@@ -144,18 +166,26 @@ void epg_parser_feed(epg_parser_t *p, const uint8_t *data, size_t n) {
 
 /* ---- command decoders ---- */
 int epg_parse_set_vs(const uint8_t *p, size_t n, epg_set_vs_t *o) {
-    if (n < 3) return 0; o->ch = p[0]; o->dac = (uint16_t)p[1] | ((uint16_t)p[2] << 8); return 1;
+    if (n < 3) return 0;
+    o->ch = p[0]; o->dac = (uint16_t)p[1] | ((uint16_t)p[2] << 8);
+    return 1;
 }
 int epg_parse_set_ri(const uint8_t *p, size_t n, epg_set_ri_t *o) {
-    if (n < 2) return 0; o->ch = p[0]; o->mode = p[1]; return 1;
+    if (n < 2) return 0;
+    o->ch = p[0]; o->mode = p[1];
+    return 1;
 }
 int epg_parse_cal(const uint8_t *p, size_t n, epg_cal_t *o) {
-    if (n < 2) return 0; o->ch = p[0]; o->action = p[1];
-    o->dur_ms = (n >= 4) ? ((uint16_t)p[2] | ((uint16_t)p[3] << 8)) : 0; return 1;
+    if (n < 2) return 0;
+    o->ch = p[0]; o->action = p[1];
+    o->dur_ms = (n >= 4) ? ((uint16_t)p[2] | ((uint16_t)p[3] << 8)) : 0;
+    return 1;
 }
 int epg_parse_servo(const uint8_t *p, size_t n, epg_servo_t *o) {
-    if (n < 2) return 0; o->ch = p[0]; o->mode = p[1];
+    if (n < 2) return 0;
+    o->ch = p[0]; o->mode = p[1];
     o->target   = (n >= 4) ? ((uint16_t)p[2] | ((uint16_t)p[3] << 8)) : 0;
     o->deadband = (n >= 6) ? ((uint16_t)p[4] | ((uint16_t)p[5] << 8)) : 0;
-    o->flags    = (n >= 7) ? p[6] : 0; return 1;
+    o->flags    = (n >= 7) ? p[6] : 0;
+    return 1;
 }

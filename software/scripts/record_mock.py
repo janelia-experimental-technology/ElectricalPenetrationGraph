@@ -18,7 +18,7 @@ from epgrig import protocol as P
 from epgrig.acquisition import StreamConsumer
 from epgrig.mock_device import MockDevice
 from epgrig.recorder import HDF5Recorder
-from epgrig import reader
+from epgrig.summary import print_summary
 
 
 def main() -> int:
@@ -43,28 +43,7 @@ def main() -> int:
     print(f"  streamed: {consumer.n_blocks} blocks, {consumer.n_samples} samples, "
           f"{consumer.n_events} events  (CRC errs={consumer.parser.crc_errors})")
 
-    # read back + reconstruct
-    r = reader.load(args.out)
-    print(f"\nRead back {args.out}:")
-    print(f"  format {r.attrs['format_version']}  serial {r.attrs['device_serial']}  "
-          f"fw {r.attrs['firmware_version']}")
-    print(f"  {r.n_samples} samples x {len(r.channel_ids)} ch @ {r.rate_hz} Hz "
-          f"({r.attrs['duration_s']:.2f} s);  gain={r.fixed_gain}")
-    ir = r.input_referred
-    unc = r.uncompensated()
-    print(f"  input-referred ch0:  mean={ir[:,0].mean()*1e3:+.2f} mV  "
-          f"std={ir[:,0].std()*1e3:.2f} mV  range=[{ir[:,0].min()*1e3:+.1f},{ir[:,0].max()*1e3:+.1f}] mV")
-    print(f"  uncompensated ch0:   mean={unc[:,0].mean()*1e3:+.2f} mV  "
-          f"std={unc[:,0].std()*1e3:.2f} mV (drift visible since Vs removed)")
-    evs = r.events_as_dicts()
-    from collections import Counter
-    kinds = Counter(e["type"] for e in evs)
-    print(f"  events: {dict(kinds)}")
-    vs_evs = [e for e in evs if e["type"] == "VS_CHANGE"]
-    if vs_evs:
-        e = vs_evs[0]
-        print(f"  first VS_CHANGE: sample {e['sample_index']} ch{e['channel']} "
-              f"dac {e['a']}->{e['b']} ({e['text']})")
+    print_summary(args.out)
     print("\nOK: full mock->protocol->HDF5->reconstruct pipeline verified.")
     return 0
 

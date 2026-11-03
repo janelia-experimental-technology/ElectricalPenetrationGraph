@@ -287,14 +287,42 @@ groundwork + hand-off (routing of an fA front end is deliberately a human task).
 - **`pcb/single_channel.kicad_dru`** — custom design rules (HighZ clearance/no-via/thin-track,
   diff-pair skew, fab floors). Confirmed it **parses cleanly** (kicad-cli DRC, 0 rule errors).
 
+## D20 — RP2040 firmware v0.2 + real-device host transport (`firmware/`, `software/`)
+**Done:** the firmware skeleton became a complete, compiling Pico H firmware, plus the host side
+needed to swap the mock for it.
+- **Firmware** (`firmware/src/`): DRDY-interrupt acquisition into a 1024-sample ring (USB stalls
+  can't lose samples); ADS131M08 driver (reset, ID check, MODE/CLOCK/GAIN, OSR per rate — 250 Hz
+  is OSR 8192 averaged ×2 so every rate is exact at CLKIN 8.192 MHz); DAC8568 driver; 74HC595 Ri
+  lines; Vs servo (off / track / acquire→track with target, deadband, freeze), −50 mV cal pulse on
+  the Vs line, clip events, sample-stamped EVENTs for every state change, NACK reasons, START
+  snapshot events. **Built-in simulator** when no ADC answers, so a bare Pico exercises the whole
+  chain (serial suffixed `-SIM`). Compiles with PlatformIO/arduino-pico (45 kB flash, 66 kB RAM).
+  `board.h` is the pin/option contract for the (not yet designed) motherboard; RP2040 generates the
+  ADC CLKIN by default, an 8.192 MHz oscillator is the recommended final option.
+- **Bugs found in the v0.1 skeleton and fixed:** `epg_encode_frame` staged frames in a 512 B stack
+  buffer (real 50 ms blocks are 1.2–4.8 kB → stack overflow; now a streaming COBS encoder with
+  `EPG_FRAME_MAX`, tested up to 4.8 kB incl. C↔Python interop); `main.cpp` used a 600 B TX buffer
+  (same); Arduino `SPI` left on the default pins (GP16–19, not the board's SPI0 GP2–4); DAC init
+  word and ADC configuration were TODOs; servo gain was a placeholder; a CS glitch at pin init.
+- **Host** (`software/epgrig/serial_device.py`, `scripts/record_device.py`, `run_gui.py --port`):
+  pyserial transport with a reader thread, ACK/NACK handling (`DeviceError`), Pico auto-detect,
+  stale-stream recovery on open; `SerialGuiBridge` lets the existing GUI drive the device.
+- **Verified without hardware:** the real `firmware.uf2` runs in the rp2040js emulator and is driven
+  by the real Python host code (`firmware/test/emu_test.py`, both simulator and modelled-ADC
+  paths): every command incl. NACKs; step/cal amplitudes to ~0.1 mV; true drift recovered from the
+  event log for servo off/track/acquire; all 5 rates deliver a 3 Hz tone at 3.00 Hz with no lost
+  samples (0 missed ADC conversions at 4 kHz). 25 host tests + C selftest + interop pass.
+- **NOT verified on silicon:** ADS131M08 ID/MODE/CLOCK/OSR/CRC details, DAC8568 mode/reference,
+  Vs polarity, relay edge polarity, clock jitter — see the bring-up checklist in `firmware/README.md`.
+
 ---
 
 ## Open questions / next pivots
 - **Layout engineer:** Update-PCB-from-Schematic, refine placement (clear the 40 items),
   implement the guard scheme, route, swap the 3 PLACEHOLDER footprints, DRC-clean.
 - Finalize FDA supply/VOCM, relay-driver sub-circuit, ADC RC + CLKIN, Vs scale/offset, USB budget.
-- Firmware hardware bring-up: ADS131M08/DAC8568 register init + CRC, Vs calibration, relay
-  pulse driver; compile with PlatformIO + flash + talk to the host GUI over a real port.
+- Firmware hardware bring-up (D20 checklist): verify ADS131M08/DAC8568 details on silicon, Vs
+  polarity + calibration, relay edge polarity; design the motherboard to `board.h`.
 - Mechanical: shielded probe-head enclosure, guard-ring layout, conformal coating.
 - Software niceties: analysis/Y-zoom UI, waveform labeling, NWB export, real serial transport.
 - Channel count confirm (assume 8).

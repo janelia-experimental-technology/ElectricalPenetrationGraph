@@ -42,8 +42,13 @@ size_t epg_cobs_decode(const uint8_t *in, size_t n, uint8_t *out, int *ok);
 void   epg_pack_i24(int32_t v, uint8_t *out3);
 int32_t epg_unpack_i24(const uint8_t *in3);
 
-/* Build a complete framed message (COBS + CRC + 0x00 delimiter) from a body.
- * Returns total bytes written to `frame` (caller buffer big enough). */
+/* Worst-case encoded frame size for a payload of `plen` bytes (type+flags+crc = 4 extra,
+ * COBS overhead 1 per 254, +1 leading code, +1 delimiter). */
+#define EPG_FRAME_MAX(plen) ((size_t)(plen) + 4u + ((size_t)(plen) + 4u) / 254u + 2u)
+
+/* Build a complete framed message (COBS + CRC + 0x00 delimiter).
+ * Returns total bytes written to `frame`, which must hold EPG_FRAME_MAX(plen) bytes.
+ * Any payload size is safe (streaming encode; no internal size limit). */
 size_t epg_encode_frame(uint8_t type, uint8_t flags,
                         const uint8_t *payload, size_t plen, uint8_t *frame);
 
