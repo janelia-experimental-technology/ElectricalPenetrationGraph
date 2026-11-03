@@ -1717,6 +1717,12 @@ chip</description>
 <segment>
 <pinref part="U2" gate="G$1" pin="AIN7N"/>
 <wire x1="-5.08" y1="147.32" x2="132.08" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="147.32" x2="-5.08" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="-5.08" y1="144.78" x2="-12.7" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="-17.78" y1="144.78" x2="-12.7" y2="144.78" width="0.1524" layer="91"/>
+<junction x="-12.7" y="144.78"/>
 </segment>
 </net>
 <net name="K7P" class="0">
@@ -1784,16 +1790,6 @@ chip</description>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="-27.94" y1="144.78" x2="-38.1" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="144.78" x2="-38.1" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="R4" gate="G$1" pin="2"/>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="-17.78" y1="144.78" x2="-12.7" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="144.78" x2="-5.08" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="144.78" x2="-5.08" y2="147.32" width="0.1524" layer="91"/>
-<junction x="-12.7" y="144.78"/>
 </segment>
 </net>
 <net name="AIN3P" class="0">
@@ -1954,13 +1950,6 @@ chip</description>
 <label x="172.72" y="172.72" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="SCLK" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="SCLK"/>
-<wire x1="170.18" y1="175.26" x2="182.88" y2="175.26" width="0.1524" layer="91"/>
-<label x="172.72" y="175.26" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="SPIOTX" class="0">
 <segment>
 <wire x1="251.46" y1="142.24" x2="264.16" y2="142.24" width="0.1524" layer="91"/>
@@ -1988,6 +1977,11 @@ chip</description>
 <pinref part="U1" gate="A" pin="SCLK"/>
 <wire x1="170.18" y1="109.22" x2="180.34" y2="109.22" width="0.1524" layer="91"/>
 <label x="172.72" y="109.22" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="SCLK"/>
+<wire x1="170.18" y1="175.26" x2="182.88" y2="175.26" width="0.1524" layer="91"/>
+<label x="172.72" y="175.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPICS" class="0">
