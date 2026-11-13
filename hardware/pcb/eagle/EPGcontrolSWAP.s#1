@@ -9921,29 +9921,29 @@ Standard 3.3V and 5V 500mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <part name="R16" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="1K00"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="U4" library="adafruit" deviceset="QUAD_OPAMP" device="D"/>
-<part name="R10" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="1K00"/>
-<part name="R6" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="1K00"/>
-<part name="R39" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="1K00"/>
-<part name="R34" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="1K00"/>
+<part name="R10" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="2K00"/>
+<part name="R6" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="49K9"/>
+<part name="R39" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="49K9"/>
+<part name="R34" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="1K02"/>
 <part name="U7" library="SparkFun-IC-Amplifiers" deviceset="OPA344" device="" value="OPA344"/>
 <part name="C42" library="STEVES_BU" deviceset="CAPS" device="0603S" value="0.1"/>
-<part name="R22" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="1K00"/>
-<part name="R25" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="1K00"/>
-<part name="R7" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="1K00"/>
-<part name="R11" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="1K00"/>
-<part name="R21" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="1K00"/>
-<part name="R17" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="1K00"/>
+<part name="R22" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="2K00"/>
+<part name="R25" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="2K00"/>
+<part name="R7" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="2K00"/>
+<part name="R11" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="49K9"/>
+<part name="R21" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="49K9"/>
+<part name="R17" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="49K9"/>
 <part name="J9" library="54-00248" deviceset="54-00248" device=""/>
 <part name="J2" library="54-00248" deviceset="54-00248" device=""/>
 <part name="U6" library="adafruit" deviceset="QUAD_OPAMP" device="D"/>
-<part name="R26" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="1K00"/>
-<part name="R20" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="1K00"/>
-<part name="R9" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="1K00"/>
-<part name="R23" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="1K00"/>
-<part name="R8" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="1K00"/>
-<part name="R12" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="1K00"/>
-<part name="R19" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="1K00"/>
-<part name="R13" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="1K00"/>
+<part name="R26" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="2K00"/>
+<part name="R20" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="49K9"/>
+<part name="R9" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="2K00"/>
+<part name="R23" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="2K00"/>
+<part name="R8" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="2K00"/>
+<part name="R12" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="49K9"/>
+<part name="R19" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="49K9"/>
+<part name="R13" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="49K9"/>
 <part name="C41" library="STEVES_BU" deviceset="CAPS" device="0603S" value="0.1"/>
 <part name="C40" library="STEVES_BU" deviceset="CAPS" device="0603S" value="0.1"/>
 <part name="C27" library="STEVES_BU" deviceset="CAPS" device="0603S" value="0.1"/>
@@ -9968,6 +9968,7 @@ Standard 3.3V and 5V 500mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <part name="J11" library="SparkFun-Connectors" deviceset="CONN_03" device="LOCK"/>
 <part name="LP5907" library="SparkFun-IC-Power" deviceset="V_REG_MIC5219" device="3.3V" value="TP5907"/>
 <part name="C60" library="STEVES_BU" deviceset="CAPS" device="0805S" value="1"/>
+<part name="C59" library="STEVES_BU" deviceset="CAPS" device="0603S" value="0.1"/>
 </parts>
 <sheets>
 <sheet>
@@ -10299,11 +10300,11 @@ Standard 3.3V and 5V 500mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <attribute name="NAME" x="415.29" y="75.1586" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="410.21" y="74.422" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="U7" gate="G1" x="388.62" y="83.82" rot="MR0"/>
-<instance part="U7" gate="G2" x="391.16" y="66.04" rot="MR90"/>
-<instance part="C42" gate="G$1" x="393.7" y="55.88" smashed="yes" rot="MR90">
-<attribute name="NAME" x="391.541" y="57.404" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="386.461" y="57.404" size="1.778" layer="96" rot="MR90"/>
+<instance part="U7" gate="G1" x="391.16" y="83.82" rot="MR0"/>
+<instance part="U7" gate="G2" x="391.16" y="60.96" rot="MR90"/>
+<instance part="C42" gate="G$1" x="398.78" y="50.8" smashed="yes" rot="MR0">
+<attribute name="NAME" x="394.716" y="48.641" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="397.256" y="43.561" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="R22" gate="G$1" x="302.26" y="91.44" smashed="yes" rot="R180">
 <attribute name="NAME" x="303.53" y="95.0214" size="1.778" layer="95" rot="R180"/>
@@ -10325,9 +10326,9 @@ Standard 3.3V and 5V 500mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <attribute name="NAME" x="318.77" y="56.9214" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="313.69" y="50.038" size="1.778" layer="96"/>
 </instance>
-<instance part="R17" gate="G$1" x="320.04" y="83.82" smashed="yes" rot="R180">
-<attribute name="NAME" x="321.31" y="87.4014" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="316.23" y="80.518" size="1.778" layer="96"/>
+<instance part="R17" gate="G$1" x="325.12" y="83.82" smashed="yes" rot="R180">
+<attribute name="NAME" x="326.39" y="87.4014" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="321.31" y="80.518" size="1.778" layer="96"/>
 </instance>
 <instance part="J9" gate="1" x="86.36" y="134.62" rot="R270"/>
 <instance part="J2" gate="1" x="220.98" y="294.64" rot="MR90"/>
@@ -10448,6 +10449,10 @@ Standard 3.3V and 5V 500mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <instance part="J11" gate="J$1" x="193.04" y="53.34" rot="R180"/>
 <instance part="LP5907" gate="G$1" x="309.88" y="167.64"/>
 <instance part="C60" gate="G$1" x="294.64" y="172.72"/>
+<instance part="C59" gate="G$1" x="381" y="50.8" smashed="yes" rot="MR0">
+<attribute name="NAME" x="376.936" y="48.641" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="379.476" y="43.561" size="1.778" layer="96" rot="MR0"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -10583,16 +10588,6 @@ Standard 3.3V and 5V 500mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <label x="424.18" y="71.12" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
-<pinref part="U7" gate="G2" pin="P$V-"/>
-<wire x1="383.54" y1="66.04" x2="381" y2="66.04" width="0.1524" layer="91"/>
-<label x="381" y="66.04" size="1.778" layer="95" rot="MR0"/>
-<wire x1="381" y1="66.04" x2="375.92" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="381" y1="66.04" x2="381" y2="55.88" width="0.1524" layer="91"/>
-<junction x="381" y="66.04"/>
-<pinref part="C42" gate="G$1" pin="2"/>
-<wire x1="381" y1="55.88" x2="386.08" y2="55.88" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="J2" gate="1" pin="8"/>
 <wire x1="215.9" y1="284.48" x2="215.9" y2="279.4" width="0.1524" layer="91"/>
 <label x="215.9" y="284.48" size="1.778" layer="95" rot="MR270"/>
@@ -10697,6 +10692,12 @@ Standard 3.3V and 5V 500mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <wire x1="294.64" y1="157.48" x2="284.48" y2="157.48" width="0.1524" layer="91"/>
 <label x="284.48" y="157.48" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="C59" gate="G$1" pin="2"/>
+<pinref part="C42" gate="G$1" pin="2"/>
+<wire x1="381" y1="43.18" x2="398.78" y2="43.18" width="0.1524" layer="91"/>
+<label x="386.08" y="43.18" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="-5V0" class="0">
 <segment>
@@ -10798,6 +10799,15 @@ Standard 3.3V and 5V 500mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <label x="220.98" y="147.32" size="1.778" layer="95" rot="R90"/>
 <pinref part="J6" gate="1" pin="6"/>
 </segment>
+<segment>
+<pinref part="U7" gate="G2" pin="P$V-"/>
+<wire x1="383.54" y1="60.96" x2="381" y2="60.96" width="0.1524" layer="91"/>
+<label x="381" y="60.96" size="1.778" layer="95" rot="MR0"/>
+<wire x1="381" y1="60.96" x2="375.92" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="381" y1="60.96" x2="381" y2="50.8" width="0.1524" layer="91"/>
+<junction x="381" y="60.96"/>
+<pinref part="C59" gate="G$1" pin="1"/>
+</segment>
 </net>
 <net name="5V0" class="0">
 <segment>
@@ -10854,11 +10864,10 @@ Standard 3.3V and 5V 500mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <segment>
 <pinref part="C42" gate="G$1" pin="1"/>
 <pinref part="U7" gate="G2" pin="P$V+"/>
-<wire x1="393.7" y1="55.88" x2="398.78" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="398.78" y1="55.88" x2="398.78" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="398.78" y1="66.04" x2="406.4" y2="66.04" width="0.1524" layer="91"/>
-<junction x="398.78" y="66.04"/>
-<label x="406.4" y="66.04" size="1.778" layer="95" rot="MR0"/>
+<wire x1="398.78" y1="50.8" x2="398.78" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="398.78" y1="60.96" x2="406.4" y2="60.96" width="0.1524" layer="91"/>
+<junction x="398.78" y="60.96"/>
+<label x="406.4" y="60.96" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
 <pinref part="U4" gate="P" pin="V-"/>
@@ -12314,18 +12323,6 @@ Standard 3.3V and 5V 500mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <label x="312.42" y="106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U7" gate="G1" pin="-IN"/>
-<wire x1="396.24" y1="86.36" x2="398.78" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="398.78" y1="86.36" x2="398.78" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="398.78" y1="93.98" x2="378.46" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="378.46" y1="93.98" x2="378.46" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="U7" gate="G1" pin="OUT"/>
-<wire x1="378.46" y1="83.82" x2="381" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="378.46" y1="83.82" x2="373.38" y2="83.82" width="0.1524" layer="91"/>
-<junction x="378.46" y="83.82"/>
-<label x="375.92" y="83.82" size="1.778" layer="95" rot="MR0"/>
-</segment>
-<segment>
 <pinref part="U4" gate="B" pin="+IN"/>
 <wire x1="309.88" y1="78.74" x2="317.5" y2="78.74" width="0.1524" layer="91"/>
 <label x="312.42" y="78.74" size="1.778" layer="95"/>
@@ -12360,15 +12357,27 @@ Standard 3.3V and 5V 500mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <wire x1="254" y1="20.32" x2="266.7" y2="20.32" width="0.1524" layer="91"/>
 <label x="256.54" y="22.86" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U7" gate="G1" pin="OUT"/>
+<wire x1="383.54" y1="83.82" x2="378.46" y2="83.82" width="0.1524" layer="91"/>
+<label x="375.92" y="83.82" size="1.778" layer="95" rot="MR0"/>
+<pinref part="U7" gate="G1" pin="-IN"/>
+<wire x1="378.46" y1="83.82" x2="370.84" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="398.78" y1="86.36" x2="401.32" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="401.32" y1="86.36" x2="401.32" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="401.32" y1="93.98" x2="378.46" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="378.46" y1="93.98" x2="378.46" y2="83.82" width="0.1524" layer="91"/>
+<junction x="378.46" y="83.82"/>
+</segment>
 </net>
-<net name="0V357" class="0">
+<net name="0V05" class="0">
 <segment>
 <pinref part="R39" gate="G$1" pin="1"/>
 <pinref part="R34" gate="G$1" pin="2"/>
+<wire x1="416.56" y1="81.28" x2="398.78" y2="81.28" width="0.1524" layer="91"/>
 <junction x="416.56" y="81.28"/>
-<label x="408.94" y="81.28" size="1.778" layer="95" rot="MR0"/>
+<label x="403.86" y="81.28" size="1.778" layer="95"/>
 <pinref part="U7" gate="G1" pin="+IN"/>
-<wire x1="416.56" y1="81.28" x2="396.24" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DAC0" class="0">
@@ -12383,7 +12392,7 @@ Standard 3.3V and 5V 500mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <segment>
 <pinref part="R17" gate="G$1" pin="2"/>
 <pinref part="U4" gate="B" pin="-IN"/>
-<wire x1="314.96" y1="83.82" x2="309.88" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="83.82" x2="309.88" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="R22" gate="G$1" pin="1"/>
 <wire x1="307.34" y1="91.44" x2="309.88" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="309.88" y1="91.44" x2="309.88" y2="83.82" width="0.1524" layer="91"/>
@@ -12393,7 +12402,7 @@ Standard 3.3V and 5V 500mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <net name="DAC1" class="0">
 <segment>
 <pinref part="R17" gate="G$1" pin="1"/>
-<wire x1="325.12" y1="83.82" x2="337.82" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="83.82" x2="337.82" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="337.82" y1="83.82" x2="337.82" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="U5" gate="A" pin="VOUTB"/>
 <wire x1="337.82" y1="114.3" x2="381" y2="114.3" width="0.1524" layer="91"/>

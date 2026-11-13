@@ -1307,34 +1307,34 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </class>
 </classes>
 <parts>
-<part name="U2" library="EPG" deviceset="ADA4940-1" device=""/>
+<part name="U2" library="EPG" deviceset="ADA4940-1" device="" value="THS4521IDR"/>
 <part name="U3" library="EPG" deviceset="ADA4530-1" device=""/>
 <part name="U1" library="EPG" deviceset="ADA4530-1" device=""/>
-<part name="R8" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S"/>
-<part name="R5" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S"/>
-<part name="R6" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S"/>
+<part name="R8" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="1K00"/>
+<part name="R5" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="1K00"/>
+<part name="R6" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="24R0"/>
 <part name="R2" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S"/>
-<part name="R3" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S"/>
-<part name="R7" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S"/>
-<part name="R4" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S"/>
-<part name="R1" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S"/>
-<part name="C10" library="STEVES_BU" deviceset="CAPS" device="0603S"/>
-<part name="C1" library="STEVES_BU" deviceset="CAPS" device="0603S"/>
-<part name="C5" library="STEVES_BU" deviceset="CAPS" device="0603S"/>
-<part name="C3" library="STEVES_BU" deviceset="CAPS" device="0603S"/>
-<part name="C6" library="STEVES_BU" deviceset="CAPS" device="0603S"/>
-<part name="C7" library="STEVES_BU" deviceset="CAPS" device="0603S"/>
+<part name="R3" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="8K06"/>
+<part name="R7" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="8K06"/>
+<part name="R4" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="2K00"/>
+<part name="R1" library="STEVES_BU" deviceset="RESISTOR_SM" device="0805S" value="1K00"/>
+<part name="C10" library="STEVES_BU" deviceset="CAPS" device="0603S" value="0.1"/>
+<part name="C1" library="STEVES_BU" deviceset="CAPS" device="0603S" value="0.1"/>
+<part name="C5" library="STEVES_BU" deviceset="CAPS" device="0603S" value="0.1"/>
+<part name="C3" library="STEVES_BU" deviceset="CAPS" device="0603S" value="0.1"/>
+<part name="C6" library="STEVES_BU" deviceset="CAPS" device="0603S" value="0.1"/>
+<part name="C7" library="STEVES_BU" deviceset="CAPS" device="0603S" value="0.1"/>
 <part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="C9" library="STEVES_BU" deviceset="CAPS" device="0603S"/>
+<part name="C9" library="STEVES_BU" deviceset="CAPS" device="0603S" value="0.1"/>
 <part name="GND6" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND7" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND9" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GD" library="wirepad" deviceset="2,15/1,0" device=""/>
-<part name="J1" library="54-00248" deviceset="54-00248" device=""/>
+<part name="J1" library="54-00248" deviceset="54-00248" device="" value="54-00251"/>
 <part name="SHIELD" library="wirepad" deviceset="2,15/1,0" device=""/>
 <part name="C4" library="STEVES_BU" deviceset="CAPS" device="1206S" value="10"/>
 <part name="C8" library="STEVES_BU" deviceset="CAPS" device="1206S" value="10"/>
